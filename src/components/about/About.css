@@ -30,7 +30,7 @@
   flex-direction: column;
   padding: 2rem;
   font-size: 14px;
-  height: 300px;
+  min-height: 300px;
   width: 48%;
   border: 1px solid var(--border-clr);
   border-radius: 20px;
@@ -73,7 +73,7 @@
   border: 4px solid #fff;
   border-radius: inherit;
   position: absolute;
-  left: 170px;
+  left: 30%;
   opacity: 0.25;
   z-index: -1;
 }
@@ -85,7 +85,7 @@
   border: 4px solid #fff;
   border-radius: inherit;
   position: absolute;
-  right: 170px;
+  right: 30%;
   opacity: 0.25;
   z-index: -1;
 }
