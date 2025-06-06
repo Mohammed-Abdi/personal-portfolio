@@ -12,5 +12,6 @@
 :root {
   --background-clr: #000;
   --text-clr: #fff;
+  --border-clr: #3d444d;
   --bg-size: 200px;
 }
