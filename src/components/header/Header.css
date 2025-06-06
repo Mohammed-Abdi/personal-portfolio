@@ -1,7 +1,7 @@
 header {
   display: flex;
   justify-content: center;
-  padding: var(--sm-size);
+  padding: var(--bg-size);
   position: fixed;
   width: 100%;
 }
