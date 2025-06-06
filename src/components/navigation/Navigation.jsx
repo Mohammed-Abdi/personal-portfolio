@@ -41,7 +41,6 @@ function Navigation({ menuOpen }) {
             Experience
           </a>
         </li>
-
         <li>
           <a href="#contact">
             <img src={Contact} alt="contact" />
