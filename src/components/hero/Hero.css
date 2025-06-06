@@ -84,6 +84,9 @@
 }
 
 @media (max-width: 570px) {
+  .hero {
+    height: 90vh;
+  }
   .intro .bg-text {
     font-size: 40px;
   }
