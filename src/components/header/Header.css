@@ -1,5 +1,6 @@
 header {
   padding: var(--md-space);
+  border-radius: var(--sm-space);
   border: 1px solid var(--border-clr);
 }
 
