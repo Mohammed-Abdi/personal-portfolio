@@ -1,0 +1,24 @@
+.social-media-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media-links a:hover .social-media-username {
+  font-size: 14px;
+}
+
+.social-media-links i {
+  font-size: 24px;
+}
+
+.social-media-username {
+  font-size: 0;
+  transition: all 0.3s ease-in-out;
+}

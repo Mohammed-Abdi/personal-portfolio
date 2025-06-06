@@ -5,6 +5,7 @@ import Work from "../navigation/icons/projects.svg";
 import Skills from "../navigation/icons/skills.svg";
 import Experience from "../navigation/icons/work.svg";
 import Education from "../navigation/icons/education.svg";
+import Contact from "../navigation/icons/contact.svg";
 
 function Navigation({ menuOpen }) {
   return (
@@ -18,32 +19,38 @@ function Navigation({ menuOpen }) {
         </li>
         <li>
           <a href="#about">
-            <img src={About} alt="home" />
+            <img src={About} alt="about" />
             About
           </a>
         </li>
         <li>
           <a href="#projects">
-            <img src={Work} alt="home" />
+            <img src={Work} alt="projects" />
             Work
           </a>
         </li>
         <li>
           <a href="#skills">
-            <img src={Skills} alt="home" />
+            <img src={Skills} alt="skills" />
             Skill
           </a>
         </li>
         <li>
           <a href="#experience">
-            <img src={Experience} alt="home" />
+            <img src={Experience} alt="experience" />
             Experience
           </a>
         </li>
         <li>
           <a href="#education">
-            <img src={Education} alt="home" />
+            <img src={Education} alt="education" />
             Education
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <img src={Contact} alt="contact" />
+            Contact
           </a>
         </li>
       </ul>
