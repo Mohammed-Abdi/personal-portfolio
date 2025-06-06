@@ -41,12 +41,7 @@ function Navigation({ menuOpen }) {
             Experience
           </a>
         </li>
-        <li>
-          <a href="#education">
-            <img src={Education} alt="education" />
-            Education
-          </a>
-        </li>
+
         <li>
           <a href="#contact">
             <img src={Contact} alt="contact" />
