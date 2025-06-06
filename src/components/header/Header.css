@@ -1,16 +1,28 @@
 header {
-  padding: var(--md-space);
-  border-radius: var(--sm-space);
-  border: 1px solid var(--border-clr);
+  display: flex;
+  justify-content: center;
+  padding: var(--sm-space);
+  position: fixed;
+  width: 100%;
 }
 
 header ul {
   display: flex;
+  align-items: center;
   list-style: none;
-  gap: 10px;
+  padding: var(--md-space) var(--sm-space);
+  border-radius: var(--sm-space);
+  border: 1px solid var(--border-clr);
 }
 
 header ul a {
   text-decoration: none;
   color: inherit;
+  border-radius: var(--sm-space);
+  padding: var(--sm-space) var(--md-space);
+  transition: all 0.3s ease-in-out;
+}
+
+header ul a:hover {
+  background: var(--border-clr);
 }
