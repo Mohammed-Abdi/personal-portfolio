@@ -51,6 +51,7 @@
 
   .nav-menu a {
     display: flex;
+    width: 55vw;
     align-items: center;
     gap: 10px;
   }
