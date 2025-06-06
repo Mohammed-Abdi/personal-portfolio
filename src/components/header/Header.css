@@ -1,32 +1,15 @@
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1.25rem;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
-header ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-size: 0.875rem;
-  padding: 0.875rem 0.5rem;
-  border-radius: 0.75rem;
-  border: 1px solid var(--border-clr);
-
-  background: var(--transparent-background);
-  backdrop-filter: blur(10px);
-}
-
-header ul a {
-  text-decoration: none;
-  color: inherit;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.875rem;
-  transition: all 0.3s ease-in-out;
-}
-
-header ul a:hover {
-  background: var(--hover-clr);
+@media (max-width: 768px) {
+  header {
+    justify-content: start;
+  }
 }

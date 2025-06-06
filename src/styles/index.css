@@ -12,7 +12,8 @@
 :root {
   --background-clr: #000;
   --transparent-background: #8f8f8f14;
-  --hover-clr: #ffffff1b;
+  --hover-clr: #ffffff21;
+  --s-background: #0d1117;
   --text-clr: #fff;
   --border-clr: #3d444d;
 }

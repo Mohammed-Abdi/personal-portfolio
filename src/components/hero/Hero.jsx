@@ -11,11 +11,11 @@ function Hero() {
       <div className="intro">
         <span className="bg-text">Turning Ideas Into Reality</span>
         <p className="sm-text">
-          Hey there, I'm Mohammed —{" "}
+          Hey there, I'm Mohammed —
           <span className="colored">A Front-End Engineer</span>
         </p>
       </div>
-      {<Button />}
+      <Button />
     </section>
   );
 }

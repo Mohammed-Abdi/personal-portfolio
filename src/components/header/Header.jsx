@@ -1,28 +1,15 @@
+import { useState } from "react";
+import Hamburger from "../hamburger/Hamburger.jsx";
+import Navigation from "../navigation/Navigation.jsx";
 import "../header/Header.css";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#projects">Work</a>
-        </li>
-        <li>
-          <a href="#skills">Skill</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-      </ul>
+      <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navigation menuOpen={menuOpen} />
     </header>
   );
 }
