@@ -1,7 +1,7 @@
 header {
   display: flex;
   justify-content: center;
-  padding: var(--bg-size);
+  padding: 1.25rem;
   position: fixed;
   width: 100%;
 }
@@ -10,21 +10,23 @@ header ul {
   display: flex;
   align-items: center;
   list-style: none;
-  padding: var(--md-size) var(--sm-size);
-  border-radius: var(--sm-size);
-  background: var(--transparent-background);
+  font-size: 0.875rem;
+  padding: 0.875rem 0.5rem;
+  border-radius: 0.75rem;
   border: 1px solid var(--border-clr);
-  backdrop-filter: blur(var(--md-size));
+
+  background: var(--transparent-background);
+  backdrop-filter: blur(10px);
 }
 
 header ul a {
   text-decoration: none;
   color: inherit;
-  border-radius: var(--sm-size);
-  padding: var(--sm-size) var(--md-size);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.875rem;
   transition: all 0.3s ease-in-out;
 }
 
 header ul a:hover {
-  background: var(--border-clr);
+  background: var(--hover-clr);
 }

@@ -1,0 +1,84 @@
+.sleek-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  position: relative;
+  margin-top: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid var(--border-clr);
+  position: relative;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.sleek-btn::after {
+  content: "";
+  aspect-ratio: 1/1;
+  width: 0;
+  height: 0;
+  right: 5px;
+  background: #fff;
+  position: absolute;
+  border-radius: inherit;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.sleek-btn::before {
+  content: "";
+  aspect-ratio: 1/1;
+  height: 80%;
+  right: 5px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.sleek-btn:hover {
+  color: #000;
+}
+
+.sleek-btn:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.sleek-btn:hover:before {
+  right: 0;
+  height: 100%;
+}
+
+.btn-txt {
+  transform: translateX(-10px);
+}
+
+.sleek-btn .bx-arrow-back {
+  color: #000;
+  transform: rotate(180deg);
+  right: 16px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.sleek-btn .bx-arrow-back.hidden {
+  right: 50px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.sleek-btn:hover .bx-arrow-back.hidden {
+  right: 16px;
+  opacity: 1;
+}
+
+.sleek-btn:hover .bx-arrow-back {
+  right: -20px;
+  opacity: 0;
+}

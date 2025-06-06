@@ -1,10 +1,11 @@
 .glow {
   position: fixed;
   width: 100vw;
-  height: var(--bg-space);
+  height: 200px;
   background: #622ab1;
   left: 0;
   border-radius: 50%;
   bottom: -50px;
-  filter: blur(var(--bg-space));
+  filter: blur(200px);
+  z-index: -10;
 }

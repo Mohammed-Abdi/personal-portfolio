@@ -4,5 +4,9 @@ body {
   background: var(--background-clr);
   color: var(--text-clr);
   font-family: "outfit";
-  font-size: 14px;
+}
+
+.colored {
+  color: #0077ff;
+  font-weight: 500;
 }

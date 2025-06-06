@@ -1,0 +1,82 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 1.25rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-clr);
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.badge .light {
+  aspect-ratio: 1/1;
+  height: 10px;
+  border-radius: 50%;
+  background: green;
+  position: relative;
+  animation: flicker 2s infinite ease-in-out;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.light::after {
+  content: "";
+  width: 120%;
+  height: 120%;
+  left: 50%;
+  top: 50%;
+  border-radius: inherit;
+  background: inherit;
+  opacity: 0.5;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: pulse 2s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.1;
+  }
+}
+
+.intro .bg-text {
+  font-size: 60px;
+  font-weight: 600;
+}
