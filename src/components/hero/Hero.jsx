@@ -1,5 +1,5 @@
 import Button from "../button/Button.jsx";
-import "../hero/hero.css";
+import "../hero/Hero.css";
 
 function Hero() {
   return (
