@@ -11,6 +11,7 @@
 
 :root {
   --background-clr: #000;
+  --transparent-background: rgba(143, 143, 143, 0.14);
   --text-clr: #fff;
   --border-clr: #3d444d;
   --bg-space: 200px;
