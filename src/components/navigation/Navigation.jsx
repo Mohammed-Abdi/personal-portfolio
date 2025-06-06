@@ -4,7 +4,6 @@ import About from "../navigation/icons/about.svg";
 import Work from "../navigation/icons/projects.svg";
 import Skills from "../navigation/icons/skills.svg";
 import Experience from "../navigation/icons/work.svg";
-import Education from "../navigation/icons/education.svg";
 import Contact from "../navigation/icons/contact.svg";
 
 function Navigation({ menuOpen }) {
