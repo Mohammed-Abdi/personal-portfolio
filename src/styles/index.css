@@ -13,8 +13,8 @@
   --background-clr: #000;
   --text-clr: #fff;
   --border-clr: #3d444d;
-  --bg-size: 200px;
-  --sm-space: 7px;
-  --md-space: 14px;
-  --bg-space: 20px;
+  --bg-space: 200px;
+  --sm-size: 7px;
+  --md-size: 14px;
+  --bg-size: 20px;
 }
