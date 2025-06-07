@@ -21,30 +21,68 @@
   align-items: center;
   border: 1px solid var(--border-clr);
   gap: 0.5rem;
+  background: var(--background-clr);
   padding: 0.5rem 1.25rem;
   border-radius: 1.25rem;
   margin-bottom: 1.25rem;
   font-size: 0.875rem;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.badge::before {
+  content: "";
+  width: 102%;
+  height: 110%;
+  background: conic-gradient(
+    from var(--angle),
+    #ffffff00 0%,
+    #ffffff28 20%,
+    #ffffff99 50%,
+    #ffffff25 80%,
+    #ffffff00 100%
+  );
+  position: absolute;
+  border-radius: inherit;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: border-glow 2s linear infinite;
+  z-index: -1;
+}
+
+@keyframes border-glow {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 .badge .light {
   aspect-ratio: 1/1;
   height: 10px;
   border-radius: 50%;
-  background: green;
+  background: red;
   position: relative;
-  animation: flicker 2s infinite ease-in-out;
+  animation: flicker 2s infinite linear;
 }
 
 @keyframes flicker {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0.4;
   }
-  100% {
+  50% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
   }
 }
 
@@ -59,7 +97,7 @@
   opacity: 0.5;
   position: absolute;
   transform: translate(-50%, -50%);
-  animation: pulse 2s infinite ease-in-out;
+  animation: pulse 2s infinite linear;
   pointer-events: none;
 }
 
