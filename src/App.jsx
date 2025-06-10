@@ -1,5 +1,11 @@
+import About from "./layout/about/About.jsx";
+
 function App() {
-  return <>Test</>;
+  return (
+    <>
+      <About />
+    </>
+  );
 }
 
 export default App;
