@@ -10,13 +10,13 @@
 }
 
 :root {
-  --background-clr: #09090b;
-  --text-clr: #fafafa;
+  --dark-clr: #09090b;
+  --light-clr: #fafafa;
 }
 
 body {
-  background-color: var(--background-clr);
-  color: var(--text-clr);
+  background-color: var(--dark-clr);
+  color: var(--light-clr);
   font-family: "outfit";
   width: min(43.75rem, 100% - 2.5rem);
   margin-inline: auto;
