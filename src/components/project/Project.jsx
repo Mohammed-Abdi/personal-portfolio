@@ -1,0 +1,25 @@
+import "./Project.css";
+import { Icon } from "@iconify/react";
+
+function Project(props) {
+  return (
+    <a href={props.link} className="project">
+      <div className="img-wrapper">
+        <Icon icon="ph:image-square" className="image-icon" />
+        <img src={props.image} alt={props.title} loading="lazy" />
+      </div>
+      <div className="info-wrapper">
+        <span className="project-title">{props.title}</span>
+        <p className="description">{props.description}</p>
+        <div className="tech-used">
+          <span className="tech-stack">Technologies Used</span>
+          {props.techStack.map((tech) => {
+            return <span className="technology">{tech}</span>;
+          })}
+        </div>
+      </div>
+    </a>
+  );
+}
+
+export default Project;

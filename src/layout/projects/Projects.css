@@ -1,0 +1,52 @@
+.projects {
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+  position: relative;
+  padding-top: 40px;
+}
+
+.projects .search {
+  display: flex;
+  width: 100%;
+  gap: 0.625rem;
+}
+
+.projects .search input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.7;
+  padding: 10px 20px;
+}
+.projects .search .filter {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: transparent;
+  color: var(--light-clr);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+.projects .projects-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+}
+
+.projects .recent-project {
+  position: absolute;
+  font-size: 0.75rem;
+  top: 5px;
+  left: 0;
+}
