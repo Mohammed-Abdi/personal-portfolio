@@ -1,20 +1,14 @@
 const socials = [
   {
+    name: "Linkedin",
+    icon: "mdi:linkedin",
+    link: "https://www.linkedin.com/in/mohammed-abdi-tahir",
+    username: "mohammed",
+  },
+  {
     name: "Email",
     icon: "ic:outline-email",
     link: "mailto:mohammedabdi.ta@gmail.com",
-    username: "mohammed",
-  },
-  {
-    name: "Telegram",
-    icon: "ri:telegram-2-line",
-    link: "https://t.me/its_mamme",
-    username: "mohammed",
-  },
-  {
-    name: "Facebook",
-    icon: "uil:facebook",
-    link: "https://web.facebook.com/mohammed.abdi.71619533",
     username: "mohammed",
   },
   {
@@ -24,15 +18,22 @@ const socials = [
     username: "mohammed",
   },
   {
+    name: "Telegram",
+    icon: "ri:telegram-2-line",
+    link: "https://t.me/its_mamme",
+    username: "mohammed",
+  },
+
+  {
     name: "Instagram",
     icon: "mdi:instagram",
     link: "https://www.instagram.com/its_mamme/",
     username: "mohammed",
   },
   {
-    name: "Linkedin",
-    icon: "mdi:linkedin",
-    link: "https://www.linkedin.com/in/mohammed-abdi-tahir",
+    name: "Facebook",
+    icon: "uil:facebook",
+    link: "https://web.facebook.com/mohammed.abdi.71619533",
     username: "mohammed",
   },
 ];

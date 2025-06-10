@@ -12,6 +12,8 @@
 :root {
   --dark-clr: #09090b;
   --light-clr: #fafafa;
+  --border-light: #ffffff5b;
+  --border-dark: #0000005b;
 }
 
 body {

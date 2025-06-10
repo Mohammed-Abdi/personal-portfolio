@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 function About() {
   return (
     <section className="about">
-      <div className="about-me">
+      <div className="my about-me">
         <div className="image-wrapper">
           <Icon icon="lets-icons:user" className="icon" />
           <img
@@ -26,7 +26,8 @@ function About() {
           </span>
         </div>
       </div>
-      <div className="social-links">
+      <div className="my social-links">
+        <span className="link-title">Feel free to reach out!</span>
         {socials.map((social, index) => {
           return (
             <Link
