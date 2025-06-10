@@ -8,6 +8,7 @@ function App() {
       <Header />
       <main>
         <About />
+
         <Skills />
       </main>
     </>
