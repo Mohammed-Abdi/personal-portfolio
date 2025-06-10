@@ -22,7 +22,7 @@ body {
   font-family: "outfit";
   width: min(43.75rem, 100% - 2.5rem);
   margin-inline: auto;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 main {

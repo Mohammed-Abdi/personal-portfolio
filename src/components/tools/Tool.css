@@ -1,0 +1,42 @@
+.tool {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.875rem;
+}
+
+.tool .icon {
+  font-size: 32px;
+}
+
+.tool .tech-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  /* width: 70px; */
+  /* border: 1px solid red; */
+}
+
+.tool .tech-info .tube {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  border: 1px solid var(--border-light);
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: var(--border-light);
+}
+
+.tool .tech-info .tube .fill {
+  width: 70%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--light-clr);
+}
+
+.tool .tech-info .percentage {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
