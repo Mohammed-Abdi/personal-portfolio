@@ -6,23 +6,18 @@ const techStack = [
     rate: 60,
   },
   {
-    name: "C++",
-    icon: "cib:cplusplus",
-    link: "https://cplusplus.com",
-    rate: 75,
-  },
-  {
     name: "Vanilla.js",
     icon: "devicon-plain:javascript",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     rate: 87,
   },
   {
-    name: "HTML",
-    icon: "uil:html5",
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    rate: 97,
+    name: "C++",
+    icon: "cib:cplusplus",
+    link: "https://cplusplus.com",
+    rate: 75,
   },
+
   {
     name: "CSS",
     icon: "famicons:logo-css3",

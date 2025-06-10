@@ -40,7 +40,6 @@
 .image-wrapper img {
   border-radius: inherit;
   position: absolute;
-  opacity: 0;
 }
 
 .about-me .personal-info-wrapper {
