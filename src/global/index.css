@@ -1,0 +1,23 @@
+@import "./fonts.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-clr: #09090b;
+  --text-clr: #fafafa;
+}
+
+body {
+  background-color: var(--background-clr);
+  color: var(--text-clr);
+  font-family: "outfit";
+  width: min(43.75rem, 100% - 2.5rem);
+  margin-inline: auto;
+}
