@@ -12,9 +12,17 @@
 :root {
   --dark-clr: #09090b;
   --light-clr: #fafafa;
-  --border-light: #ffffff5b;
-  --border-dark: #0000005b;
+  --border-light: #d2cfff37;
+  --border-dark: #000000;
 }
+
+/* light-mode */
+/* :root {
+  --dark-clr:#fafafa ;
+  --light-clr: #09090b;
+  --border-light:#00000037 ;
+  --border-dark: #d2cfff37;
+} */
 
 body {
   background-color: var(--dark-clr);

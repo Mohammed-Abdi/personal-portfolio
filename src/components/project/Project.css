@@ -3,7 +3,7 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  max-width: min(300px, 100%);
+  max-width: min(335px, 100%);
   border: 1px solid var(--border-light);
   border-radius: 5px;
 }
@@ -39,8 +39,16 @@
   transition: transform 0.3s ease-in-out;
 }
 .project .info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 10px;
 }
+
+.project .info-wrapper .project-title {
+  font-weight: 500;
+}
+
 .project .info-wrapper .description {
   min-height: 90px;
   font-size: 0.875rem;
@@ -56,7 +64,7 @@
 
 .project .info-wrapper .tech-used .tech-stack {
   top: -20px;
-  left: 0;
+  left: 5px;
   position: absolute;
   opacity: 0.7;
 }

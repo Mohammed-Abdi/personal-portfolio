@@ -13,8 +13,12 @@ function Project(props) {
         <p className="description">{props.description}</p>
         <div className="tech-used">
           <span className="tech-stack">Technologies Used</span>
-          {props.techStack.map((tech) => {
-            return <span className="technology">{tech}</span>;
+          {props.techStack.map((tech, index) => {
+            return (
+              <span key={index} className="technology">
+                {tech}
+              </span>
+            );
           })}
         </div>
       </div>

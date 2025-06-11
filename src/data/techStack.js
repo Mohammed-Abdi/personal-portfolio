@@ -1,26 +1,26 @@
 const techStack = [
   {
     name: "React.js",
-    icon: "fluent-mdl2:react-logo",
+    icon: "mdi:react",
     link: "https://react.dev",
     rate: 60,
   },
   {
     name: "Vanilla.js",
-    icon: "devicon-plain:javascript",
+    icon: "ant-design:java-script-outlined",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     rate: 87,
   },
   {
     name: "C++",
-    icon: "cib:cplusplus",
+    icon: "nonicons:c-plusplus-16",
     link: "https://cplusplus.com",
     rate: 75,
   },
 
   {
     name: "CSS",
-    icon: "famicons:logo-css3",
+    icon: "mdi:language-css3",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     rate: 92,
   },
