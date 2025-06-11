@@ -41,6 +41,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--padding);
+  min-height: 100vh;
 }
 
 .op-7 {
