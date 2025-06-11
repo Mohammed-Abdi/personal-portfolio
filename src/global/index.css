@@ -29,21 +29,22 @@
   );
 }
 
-/* light-mode */
-/* :root {
-  --dark-clr:#fafafa ;
-  --light-clr: #09090b;
-  --border-light:#00000037 ;
-  --border-dark: #d2cfff37;
-} */
-
 body {
   background-color: var(--dark-clr);
   color: var(--light-clr);
   font-family: "outfit";
   width: min(43.75rem, 100% - 2.5rem);
   margin-inline: auto;
-  /* border: 2px solid green; */
+  transition: all 0.3s ease-in-out;
+}
+
+body.light {
+  --dark-clr: #fafafa;
+  --light-clr: #09090b;
+  --border-light: #00000037;
+  --border-dark: #ffffff;
+  --hover-dark: #ffffff1c;
+  --hover-light: #0000001c;
 }
 
 main {
