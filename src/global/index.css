@@ -35,7 +35,6 @@ body {
   font-family: "outfit", sans-serif;
   width: min(43.75rem, 100% - 2.5rem);
   margin-inline: auto;
-  transition: all 0.3s ease-in-out;
 }
 
 main {
