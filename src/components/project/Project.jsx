@@ -6,7 +6,13 @@ function Project(props) {
     <a href={props.link} className="project" target="_blank">
       <div className="img-wrapper">
         <Icon icon="ph:image-square" className="image-icon" />
-        <img src={props.image} alt={props.title} loading="lazy" />
+        <img
+          src={props.image}
+          alt={props.title}
+          loading="lazy"
+          width={1280}
+          height={720}
+        />
       </div>
       <div className="info-wrapper">
         <span className="project-title">{props.title}</span>
