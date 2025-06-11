@@ -27,8 +27,27 @@
   border-radius: 50%;
   position: relative;
   height: 50px;
+  border: 3px solid var(--dark-clr);
   aspect-ratio: 1/1;
   background-color: var(--light-clr);
+}
+
+.about-me .image-wrapper::before {
+  position: absolute;
+  content: "";
+  height: 54px;
+  aspect-ratio: 1/1;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5,
+    #feda75
+  );
+  border-radius: inherit;
+  z-index: -10;
 }
 
 .about-me .image-wrapper .icon {
@@ -40,6 +59,7 @@
 .image-wrapper img {
   border-radius: inherit;
   position: absolute;
+  border: 3px solid var(--dark-clr);
 }
 
 .about-me .personal-info-wrapper {
