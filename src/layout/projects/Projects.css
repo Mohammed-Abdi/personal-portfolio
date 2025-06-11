@@ -1,62 +1,61 @@
+/* projects section */
 .projects {
   display: flex;
-  gap: 1.25rem;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  gap: var(--padding);
   position: relative;
-  padding-top: 40px;
 }
 
+/* Search container */
 .projects .search {
   display: flex;
   width: 100%;
   gap: 0.625rem;
 }
 
+/* Search bar input */
 .projects .search input {
   width: 100%;
   background-color: transparent;
   border: 1px solid var(--border-light);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   font-family: inherit;
   font-size: 0.875rem;
   font-weight: 500;
   opacity: 0.7;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
 }
+
+/* Filter button */
 .projects .search .filter {
   display: flex;
-  gap: 5px;
   align-items: center;
+  gap: 0.313rem;
   background-color: transparent;
   color: var(--light-clr);
   font-family: inherit;
   font-weight: 500;
   font-size: 0.875rem;
   border: 1px solid var(--border-light);
-  border-radius: 5px;
-  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
 }
 
+/* Project cards container */
 .projects .projects-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.25rem;
+  gap: var(--padding);
 }
 
-.projects .recent-project {
-  position: absolute;
-  font-size: 0.75rem;
-  top: 5px;
-  left: 0;
-}
-
+/* See more button */
 .projects .more-projects {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   color: inherit;
   background-color: transparent;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
   border: 1px solid var(--border-light);
   font-family: inherit;
   cursor: pointer;
