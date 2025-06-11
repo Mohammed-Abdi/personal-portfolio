@@ -8,6 +8,7 @@ const experiences = [
     started: "Mar 2025",
     ended: "Present",
     logo: "image/logo/upwork.webp",
+    link: "https://www.upwork.com/",
   },
 ];
 

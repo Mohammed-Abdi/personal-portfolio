@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 function Job(props) {
   return (
     <div className="job">
-      <div className="wrapper">
+      <a href={props.link} className="wrapper">
         <div className="image-wrapper">
           <Icon icon="mdi:building" className="icon" />
           <img
@@ -15,7 +15,7 @@ function Job(props) {
             height={50}
           />
         </div>
-      </div>
+      </a>
       <span className="profession">{props.job}</span>
       <span className="name">{props.name}</span>
       <span className="location">

@@ -18,6 +18,7 @@ function Education() {
               started={exp.started}
               ended={exp.ended}
               logo={exp.logo}
+              link={exp.link}
             />
           );
         })}

@@ -8,6 +8,7 @@ const education = [
     started: "Sep 2023",
     ended: "Present",
     logo: "image/logo/diredawauniversity.webp",
+    link: "https://www.ddu.edu.et/",
   },
 ];
 
