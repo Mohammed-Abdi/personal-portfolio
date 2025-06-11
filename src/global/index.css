@@ -50,8 +50,7 @@ body.light {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-block: 20px;
+  gap: var(--padding);
 }
 
 .op-7 {
