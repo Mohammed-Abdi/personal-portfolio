@@ -1,0 +1,28 @@
+import "./Experience.css";
+import experiences from "../../data/experience.js";
+import Job from "../../components/job/Job.jsx";
+
+function Experience() {
+  return (
+    <div className="wrapper">
+      <h3>Experience</h3>
+      <div className="experiences">
+        {experiences.map((exp, index) => {
+          return (
+            <Job
+              key={index}
+              job={exp.job}
+              name={exp.name}
+              location={exp.location}
+              description={exp.description}
+              started={exp.started}
+              ended={exp.ended}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+export default Experience;

@@ -42,10 +42,10 @@ function About() {
           })}
         </div>
       </section>
-      <p className="intro">
+      {/* <p className="intro">
         I'm a Frontend Engineer with a passion for crafting beautiful,
         responsive, and high-performance web applications
-      </p>
+      </p> */}
     </>
   );
 }

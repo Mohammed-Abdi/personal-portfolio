@@ -5,7 +5,7 @@ import Tool from "../../components/tools/Tool.jsx";
 function Skills() {
   return (
     <section className="skills">
-      <span className="lil-title">Tech-Stack</span>
+      {/* <span className="lil-title">Tech-Stack</span> */}
       {techStack.map((tech, index) => {
         return (
           <Tool
