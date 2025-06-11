@@ -69,9 +69,10 @@
   opacity: 0.7;
 }
 .project .info-wrapper .technology {
-  border: 1px solid var(--border-light);
-  padding: 2px 8px;
+  padding: 3px 10px;
+  /* background: #000dff1b; */
   border-radius: 4px;
+  border: 1px solid var(--border-light);
 }
 
 .project:hover .img-wrapper img {

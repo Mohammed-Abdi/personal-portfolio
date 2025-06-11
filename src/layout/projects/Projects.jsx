@@ -28,6 +28,7 @@ function Projects() {
           );
         })}
       </div>
+      <button className="more-projects">See More</button>
     </section>
   );
 }
