@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 function Tool(props) {
   return (
-    <a href={props.link} className="tool">
+    <a href={props.link} target="_blank" className="tool">
       <Icon icon={props.icon} className="icon" />
       <div className="tech-info">
         <span>{props.name}</span>
