@@ -13,7 +13,6 @@ function About() {
             <img
               src="image/profile/mohammed-abdi.webp"
               alt="profile picture"
-              loading="lazy"
               width={50}
               height={50}
             />
@@ -26,6 +25,9 @@ function About() {
               Dire Dawa, Ethiopia
             </span>
           </div>
+          <a className="download-cv" download href="docs">
+            Resume <Icon icon="tabler:download" />
+          </a>
         </div>
         <div className="my social-links">
           <span className="link-title">Feel free to reach out!</span>
