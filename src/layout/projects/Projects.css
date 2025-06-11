@@ -20,6 +20,7 @@
   background-color: transparent;
   border: 1px solid var(--border-light);
   border-radius: var(--border-radius);
+  color: inherit;
   font-family: inherit;
   font-size: 0.875rem;
   font-weight: 500;
