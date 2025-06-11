@@ -1,3 +1,6 @@
 header {
-  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0.625rem 1.25rem;
 }
