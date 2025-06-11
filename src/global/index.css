@@ -38,15 +38,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-body.light {
-  --dark-clr: #fafafa;
-  --light-clr: #09090b;
-  --border-light: #00000037;
-  --border-dark: #ffffff;
-  --hover-dark: #ffffff1c;
-  --hover-light: #0000001c;
-}
-
 main {
   display: flex;
   flex-direction: column;
