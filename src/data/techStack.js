@@ -6,6 +6,12 @@ const techStack = [
     rate: 60,
   },
   {
+    name: "CSS",
+    icon: "mdi:language-css3",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    rate: 92,
+  },
+  {
     name: "Vanilla.js",
     icon: "ant-design:java-script-outlined",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -16,13 +22,6 @@ const techStack = [
     icon: "nonicons:c-plusplus-16",
     link: "https://cplusplus.com",
     rate: 75,
-  },
-
-  {
-    name: "CSS",
-    icon: "mdi:language-css3",
-    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    rate: 92,
   },
 ];
 
