@@ -1,25 +1,29 @@
+/* about section */
 .about {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: var(--padding);
 }
 
+/* about items container */
 .about .my {
   display: flex;
-  padding-inline: 20px;
+  padding-inline: var(--padding);
   height: 80px;
   width: 48.5%;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   min-width: 310px;
   border: 1px solid var(--border-light);
 }
 
+/* Wrapper for about-me */
 .about .about-me {
   align-items: center;
   gap: 1rem;
 }
 
+/* Circular image wrapper with border */
 .about-me .image-wrapper {
   display: flex;
   align-items: center;
@@ -32,24 +36,18 @@
   background-color: var(--light-clr);
 }
 
+/* Decorative gradient border */
 .about-me .image-wrapper::before {
   position: absolute;
   content: "";
   height: 54px;
   aspect-ratio: 1/1;
-  background: conic-gradient(
-    from 180deg at 50% 50%,
-    #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5,
-    #feda75
-  );
+  background: var(--gradient);
   border-radius: inherit;
   z-index: -10;
 }
 
+/* Icon inside image wrapper */
 .about-me .image-wrapper .icon {
   color: var(--dark-clr);
   font-size: 24px;
@@ -62,15 +60,19 @@
   border: 3px solid var(--dark-clr);
 }
 
+/* personal info  */
 .about-me .personal-info-wrapper {
   display: flex;
   flex-direction: column;
 }
 
+/* profession */
 .personal-info-wrapper .profession {
   font-size: 0.925rem;
   opacity: 0.7;
 }
+
+/* Location */
 .personal-info-wrapper .location {
   display: flex;
   align-items: center;
@@ -80,12 +82,14 @@
   opacity: 0.7;
 }
 
+/* social links */
 .about .social-links {
   position: relative;
   padding-top: 10px;
   min-width: 310px;
 }
 
+/* Title text for links */
 .about .link-title {
   position: absolute;
   font-size: 0.75rem;
@@ -94,12 +98,7 @@
   opacity: 0.7;
 }
 
-.intro {
-  font-size: 0.875rem;
-  opacity: 0.7;
-  text-align: center;
-}
-
+/* full width on smaller devices */
 @media (max-width: 700px) {
   .about .my {
     width: 100%;
