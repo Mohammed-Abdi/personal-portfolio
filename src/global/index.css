@@ -16,6 +16,15 @@
   --border-dark: #000000;
   --border-radius: 0.5rem;
   --padding: 1.25rem;
+  --gradient: conic-gradient(
+    from 180deg at 50% 50%,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5,
+    #feda75
+  );
 }
 
 /* light-mode */
