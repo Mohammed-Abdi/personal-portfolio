@@ -2,7 +2,52 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
 }
+
+.job .wrapper {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+}
+
+/* Circular image wrapper with border */
+.job .wrapper .image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  height: 50px;
+  border: 3px solid var(--dark-clr);
+  aspect-ratio: 1/1;
+  background-color: var(--light-clr);
+}
+
+/* Decorative gradient border */
+.job .wrapper .image-wrapper::before {
+  position: absolute;
+  content: "";
+  height: 54px;
+  aspect-ratio: 1/1;
+  background: var(--gradient);
+  border-radius: inherit;
+  z-index: -10;
+}
+
+/* Icon inside image wrapper */
+.job .wrapper .image-wrapper .icon {
+  color: var(--dark-clr);
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.image-wrapper img {
+  border-radius: inherit;
+  position: absolute;
+  border: 3px solid var(--dark-clr);
+}
+
 .job .profession {
   font-weight: 500;
 }

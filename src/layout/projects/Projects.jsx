@@ -28,7 +28,13 @@ function Projects() {
           );
         })}
       </div>
-      <button className="more-projects">See More</button>
+      <a
+        href="https://github.com/Mohammed-Abdi?tab=repositories"
+        target="_blank"
+        className="more-projects"
+      >
+        See More
+      </a>
     </section>
   );
 }

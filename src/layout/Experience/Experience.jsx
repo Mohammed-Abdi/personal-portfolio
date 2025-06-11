@@ -17,6 +17,7 @@ function Experience() {
               description={exp.description}
               started={exp.started}
               ended={exp.ended}
+              logo={exp.logo}
             />
           );
         })}
