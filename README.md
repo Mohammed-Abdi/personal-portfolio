@@ -3,7 +3,7 @@
 </p>
 
 <div align="center">
-  <h1>💻 Mohammed Abdi — Frontend Portfolio</h1>
+  <h1>Mohammed Abdi - Portfolio</h1>
 
   <a href="https://mohammedabdi.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/Visit-Portfolio-0A66C2?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio" />
