@@ -17,7 +17,7 @@ const techStack = [
   {
     name: "C++",
     icon: "nonicons:c-plusplus-16",
-    rate: 75,
+    rate: 80,
   },
 ];
 
