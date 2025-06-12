@@ -4,8 +4,8 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--padding);
-  padding: var(--padding);
-  border-radius: var(--border-radius);
+  gap: var(--bg-size);
+  padding: var(--bg-size);
+  border-radius: var(--radius);
   border: 1px solid var(--border-light);
 }
