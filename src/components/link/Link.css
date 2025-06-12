@@ -35,7 +35,9 @@
   transition: font-size 0.3s ease-in-out;
 }
 
-.social-link:hover .tool-tip {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.7s;
+@media (min-width: 768px) {
+  .social-link:hover .tool-tip {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.7s;
+  }
 }
