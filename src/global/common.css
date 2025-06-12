@@ -2,9 +2,8 @@
   opacity: 0.7;
 }
 
-h3 {
-  font-size: 1rem;
-  text-align: start;
+.section-title {
+  font-weight: 500;
 }
 
 .wrapper {
@@ -13,7 +12,7 @@ h3 {
   gap: 0.625rem;
 }
 
-.wrapper h3 {
+.wrapper .section-title {
   transform: translateX(10px);
 }
 

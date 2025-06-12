@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 function Projects() {
   return (
     <section className="projects">
-      <h3>FEATURED PROJECTS</h3>
+      <span className="section-title">FEATURED PROJECTS</span>
       <div className="search">
         <input type="text" placeholder="Search..." />
         <button className="filter">
