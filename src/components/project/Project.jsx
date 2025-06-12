@@ -62,7 +62,7 @@ function Project(props) {
           <Icon icon="grommet-icons:github" />
           Source Code
         </a>
-        <div href="" className="share">
+        <div className="share">
           <Icon icon="ooui:share" />
           <div className="share-links">
             <>
