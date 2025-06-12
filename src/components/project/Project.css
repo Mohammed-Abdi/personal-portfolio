@@ -142,7 +142,7 @@
 }
 
 /* hover effect for source-code and share buttons */
-.project .link-button .share:hover .project .link-button .source-code:hover,
+.project .link-button .source-code:hover,
 .project .link-button .share:hover {
   background-color: var(--hover-light);
 }
