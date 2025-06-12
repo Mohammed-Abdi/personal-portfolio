@@ -9,7 +9,7 @@ function Job(props) {
           <Icon icon="mdi:building" className="icon" />
           <img
             src={props.logo}
-            alt={props.name}
+            alt={`${props.name} logo`}
             loading="lazy"
             width={50}
             height={50}
