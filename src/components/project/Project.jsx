@@ -20,8 +20,23 @@ function Project(props) {
         <div className="tech-used">
           <span className="tech-stack">Technologies Used</span>
           {props.techStack.map((tech, index) => {
+            let icon;
+            if (tech == "React") {
+              icon = "mdi:react";
+            } else if (tech === "Vanilla.js") {
+              icon = "ant-design:java-script-outlined";
+            } else if (tech.toLowerCase() === "css") {
+              icon = "ri:css3-fill";
+            } else if (tech === "c++") {
+              icon = "mdi:language-cpp";
+            } else if (tech.toLowerCase() === "html") {
+              icon = "flowbite:html-solid";
+            } else {
+              console.log(`icon not found for ${tech}`);
+            }
             return (
               <span key={index} className="technology">
+                <Icon icon={icon} />
                 {tech}
               </span>
             );

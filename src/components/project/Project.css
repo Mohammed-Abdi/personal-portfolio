@@ -70,6 +70,9 @@
 }
 
 .project .info-wrapper .technology {
+  display: flex;
+  align-items: center;
+  gap: var(--sm-size);
   padding: 0.1875rem var(--md-size);
   border-radius: var(--sm-size);
   background-color: var(--hover-light);
