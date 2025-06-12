@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 function Project(props) {
   return (
-    <a href={props.link} className="project" target="_blank">
+    <div className="project">
       <div className="img-wrapper">
         <Icon icon="ph:image-square" className="image-icon" />
         <img
@@ -28,7 +28,80 @@ function Project(props) {
           })}
         </div>
       </div>
-    </a>
+      <div className="link-button">
+        <a href="" className="btn live-preview">
+          <Icon icon="icon-park-outline:share" />
+          Preview
+        </a>
+        <a href="" className="btn source-code">
+          <Icon icon="grommet-icons:github" />
+          Source
+        </a>
+        <div href="" className="share">
+          <Icon icon="ooui:share" />
+          <div className="share-links">
+            <>
+              <a
+                href={`https://t.me/share/url?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon="ri:telegram-2-line" /> Telegram
+              </a>
+
+              <a
+                href={`mailto:?subject=Awesome%20Project&body=Check%20out%20this%20awesome%20project!%20${props.link}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon="ic:outline-email" /> Email
+              </a>
+
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${props.link}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon="uil:facebook" /> Facebook
+              </a>
+
+              <a
+                href={`https://twitter.com/intent/tweet?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon="ri:twitter-x-line" /> Twitter
+              </a>
+
+              <a
+                href={`https://www.reddit.com/submit?url=${props.link}&title=Check%20out%20this%20awesome%20project!`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon="dashicons:reddit" /> Reddit
+              </a>
+
+              <a
+                href={`https://api.whatsapp.com/send?text=Check%20out%20this%20awesome%20project!%20${props.link}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon="ic:baseline-whatsapp" /> WhatsApp
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${props.link}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon icon="jam:linkedin" /> LinkedIn
+              </a>
+            </>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
