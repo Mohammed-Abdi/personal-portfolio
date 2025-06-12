@@ -1,7 +1,11 @@
 import "./Header.css";
 
 function Header() {
-  return <header></header>;
+  return (
+    <header>
+      <div className="grid-overlay"></div>
+    </header>
+  );
 }
 
 export default Header;

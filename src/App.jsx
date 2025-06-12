@@ -9,7 +9,6 @@ import Skills from "./layout/skills/Skills.jsx";
 function App() {
   return (
     <>
-      <div className="grid-overlay"></div>
       <Header />
       <main>
         <About />
