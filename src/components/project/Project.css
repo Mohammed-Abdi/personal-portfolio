@@ -75,7 +75,7 @@
   gap: var(--sm-size);
   padding: 0.1875rem var(--md-size);
   border-radius: var(--sm-size);
-  background-color: var(--hover-light);
+  border: 1px solid var(--border-light);
 }
 
 /* image hover effect */
