@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="author" content="Mohammed Abdi" />
+    <meta
+      name="description"
+      content="Mohammed Abdi — Frontend Engineer crafting performant, elegant web experiences with modern technologies."
+    />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mohammedabdi.vercel.app/" />
+
+    <!-- Favicon (light/dark mode) -->
     <link
       rel="icon"
-      href="favicon/logo-dark.svg"
-      media="(prefers-color-scheme:light)"
+      href="/favicon/logo-dark.svg"
+      media="(prefers-color-scheme: light)"
     />
     <link
       rel="icon"
-      href="favicon/logo-light.svg"
-      media="(prefers-color-scheme:dark)"
+      href="/favicon/logo-light.svg"
+      media="(prefers-color-scheme: dark)"
     />
+
+    <!-- Apple Touch Icon for iOS -->
+    <link rel="apple-touch-icon" href="/favicon/logo-light.svg" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Preload Critical Assets -->
     <link
       rel="preload"
       as="image"
-      href="image/profile/mohammed-abdi.webp"
+      href="/image/profile/mohammed-abdi.webp"
       type="image/webp"
     />
     <link
@@ -33,26 +56,24 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <title>Mohammed Abdi</title>
-    <meta
-      name="description"
-      content="Mohammed Abdi — Frontend Engineer crafting performant, elegant web experiences with modern technologies."
-    />
-    <meta name="author" content="Mohammed Abdi" />
-    <meta name="theme-color" content="#09090b" />
 
+    <!-- Title -->
+    <title>Mohammed Abdi | Frontend Engineer</title>
+
+    <!-- Open Graph for social preview -->
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Mohammed Abdi | Frontend Engineer" />
     <meta
       property="og:description"
       content="Crafting elegant, responsive, high-performance websites and web apps."
     />
-    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mohammedabdi.vercel.app/" />
     <meta
       property="og:image"
       content="https://mohammedabdi.vercel.app/preview/personal-portfolio.webp"
     />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mohammed Abdi | Frontend Engineer" />
     <meta
@@ -63,7 +84,42 @@
       name="twitter:image"
       content="https://mohammedabdi.vercel.app/preview/personal-portfolio.webp"
     />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://mohammedabdi.vercel.app/#mohammed-abdi",
+        "name": "Mohammed Abdi",
+        "url": "https://mohammedabdi.vercel.app/",
+        "jobTitle": "Frontend Engineer",
+        "image": "https://mohammedabdi.vercel.app/image/profile/mohammed-abdi.webp",
+        "email": "mailto:mohammedabdi.ta@gmail.com",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        },
+        "knowsAbout": [
+          "React",
+          "JavaScript",
+          "Tailwind CSS",
+          "HTML",
+          "CSS",
+          "C++"
+        ],
+        "sameAs": [
+          "https://github.com/mohammed-abdi",
+          "https://linkedin.com/in/mohammed-abdi-tahir"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "ET"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
