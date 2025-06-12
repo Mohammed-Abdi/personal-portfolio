@@ -93,3 +93,18 @@ h3 {
     transparent 100%
   );
 }
+
+.tool-tip {
+  font-size: 0.875rem;
+  background-color: var(--light-clr);
+  color: var(--dark-clr);
+  font-weight: 500;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-out 0s;
+}
