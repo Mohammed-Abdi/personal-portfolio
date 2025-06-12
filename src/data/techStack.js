@@ -6,7 +6,7 @@ const techStack = [
   },
   {
     name: "CSS",
-    icon: "mdi:language-css3",
+    icon: "ri:css3-fill",
     rate: 92,
   },
   {
