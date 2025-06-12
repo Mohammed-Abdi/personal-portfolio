@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--padding);
+  gap: var(--bg-size);
   position: relative;
 }
 
@@ -19,7 +19,7 @@
   width: 100%;
   background-color: transparent;
   border: 1px solid var(--border-light);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius);
   color: inherit;
   font-family: inherit;
   font-size: 0.875rem;
@@ -39,7 +39,7 @@
   font-weight: 500;
   font-size: 0.875rem;
   border: 1px solid var(--border-light);
-  border-radius: var(--border-radius);
+  border-radius: var(--radius-btn);
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
@@ -54,7 +54,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--padding);
+  gap: var(--bg-size);
 }
 
 /* See more button */
@@ -62,7 +62,7 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   color: inherit;
-  border-radius: var(--border-radius);
+  border-radius: var(--radius-btn);
   border: 1px solid var(--border-light);
   font-size: 0.875rem;
   cursor: pointer;
