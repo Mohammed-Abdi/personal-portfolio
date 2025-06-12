@@ -35,7 +35,7 @@ function Projects() {
         className="more-projects"
         aria-label="See more of mohammed's projects in github"
       >
-        See More
+        See More Projects
       </a>
     </section>
   );
