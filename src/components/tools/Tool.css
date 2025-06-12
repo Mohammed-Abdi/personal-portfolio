@@ -1,10 +1,8 @@
 /* technologies I use */
 .tool {
   display: flex;
-  gap: 0.3125rem;
   align-items: center;
-  text-decoration: none;
-  color: inherit;
+  gap: 0.3125rem;
   font-size: 0.875rem;
 }
 
