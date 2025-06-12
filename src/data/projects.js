@@ -4,7 +4,7 @@ const projects = [
     title: "Personal Portfolio",
     description:
       "A responsive portfolio built with React and CSS Modules, featuring clean design, smooth animations, and reusable components.",
-    techStack: ["React.js", "Vanilla.js", "CSS"],
+    techStack: ["React", "Vanilla.js", "CSS"],
     link: "https://mohammedabdi.vercel.app",
     repo: "https://github.com/Mohammed-Abdi/personal-portfolio",
   },
