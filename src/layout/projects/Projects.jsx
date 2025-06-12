@@ -23,6 +23,7 @@ function Projects() {
               title={project.title}
               description={project.description}
               link={project.link}
+              repo={project.repo}
               techStack={project.techStack}
             />
           );
