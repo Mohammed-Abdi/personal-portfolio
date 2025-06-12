@@ -84,6 +84,9 @@
 
 /* social links */
 .about .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   position: relative;
   padding-top: 10px;
   min-width: 310px;
