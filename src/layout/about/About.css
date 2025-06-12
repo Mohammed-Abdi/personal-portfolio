@@ -1,19 +1,19 @@
-/* about section */
+/* about section that contains my photo, name, title, location, and social links*/
 .about {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--padding);
+  gap: var(--bg-size);
 }
 
 /* about items container */
 .about .my {
   display: flex;
-  padding-inline: var(--padding);
-  height: 80px;
+  padding-inline: var(--bg-size);
+  height: 5rem;
   width: 48.5%;
-  border-radius: var(--border-radius);
-  min-width: 310px;
+  border-radius: var(--radius);
+  min-width: 19.375rem;
   border: 1px solid var(--border-light);
 }
 
@@ -50,7 +50,7 @@
 /* Icon inside image wrapper */
 .about-me .image-wrapper .icon {
   color: var(--dark-clr);
-  font-size: 24px;
+  font-size: var(--icon-md);
   opacity: 0.7;
 }
 
@@ -68,7 +68,6 @@
 
 /* profession */
 .personal-info-wrapper .profession {
-  font-size: 0.925rem;
   opacity: 0.7;
 }
 
@@ -76,9 +75,8 @@
 .personal-info-wrapper .location {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
-  font-size: 0.765rem;
-  transform: translateX(-5px);
+  gap: var(--sm-size);
+  font-size: 0.75rem;
   opacity: 0.7;
 }
 
@@ -86,9 +84,9 @@
 .about .social-links {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: var(--sm-size);
   position: relative;
-  padding-top: 10px;
+  padding-top: var(--md-size);
   min-width: 310px;
 }
 
@@ -96,8 +94,8 @@
 .about .link-title {
   position: absolute;
   font-size: 0.75rem;
-  top: 5px;
-  left: 25px;
+  top: 7px;
+  left: 30px;
   opacity: 0.7;
 }
 

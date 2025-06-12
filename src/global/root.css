@@ -7,7 +7,10 @@
   --hover-light: #ffffff1c;
   --radius: 0.5rem;
   --radius-btn: 0.25rem;
-  --padding: 1.25rem;
+  --bg-size: 1.25rem;
+  --md-size: 0.625rem;
+  --sm-size: 0.25rem;
+  --icon-md: 24px;
   --gradient: conic-gradient(
     from 180deg at 50% 50%,
     #feda75,
