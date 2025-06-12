@@ -12,7 +12,7 @@ function About() {
             <Icon icon="lets-icons:user" className="icon" />
             <img
               src="image/profile/mohammed-abdi.webp"
-              alt="profile picture"
+              alt="mohammed abdi's profile picture"
               width={50}
               height={50}
             />
