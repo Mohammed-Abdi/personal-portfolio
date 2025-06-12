@@ -8,7 +8,7 @@ function Project(props) {
         <Icon icon="ph:image-square" className="image-icon" />
         <img
           src={props.image}
-          alt={props.title}
+          alt={`${props.title} project preview`}
           loading="lazy"
           width={1280}
           height={720}
