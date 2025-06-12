@@ -8,7 +8,7 @@ function Projects() {
     <section className="projects">
       <span className="section-title">FEATURED PROJECTS</span>
       <div className="search">
-        <input type="text" placeholder="Search..." />
+        <input type="text" id="search" name="search" placeholder="Search..." />
         <button className="filter">
           <Icon icon="ep:filter" className="filter-icon" />
           Filter
