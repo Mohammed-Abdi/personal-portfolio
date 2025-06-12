@@ -49,6 +49,7 @@ function Project(props) {
           className="btn live-preview"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Visit my ${props.title}`}
         >
           <Icon icon="icon-park-outline:share" />
           Preview
@@ -58,6 +59,7 @@ function Project(props) {
           className="btn source-code"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`Visit my ${props.title} repository`}
         >
           <Icon icon="grommet-icons:github" />
           Source Code
@@ -70,6 +72,7 @@ function Project(props) {
                 href={`https://t.me/share/url?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Share ${props.title} project via telegram`}
               >
                 <Icon icon="ri:telegram-2-line" /> Telegram
               </a>
@@ -78,6 +81,7 @@ function Project(props) {
                 href={`mailto:?subject=Awesome%20Project&body=Check%20out%20this%20awesome%20project!%20${props.link}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Share ${props.title} project via email`}
               >
                 <Icon icon="ic:outline-email" /> Email
               </a>
@@ -86,6 +90,7 @@ function Project(props) {
                 href={`https://www.facebook.com/sharer/sharer.php?u=${props.link}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Share ${props.title} project via facebook`}
               >
                 <Icon icon="uil:facebook" /> Facebook
               </a>
@@ -94,6 +99,7 @@ function Project(props) {
                 href={`https://twitter.com/intent/tweet?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Share ${props.title} project via x or former twitter`}
               >
                 <Icon icon="ri:twitter-x-line" /> Twitter
               </a>
@@ -102,6 +108,7 @@ function Project(props) {
                 href={`https://www.reddit.com/submit?url=${props.link}&title=Check%20out%20this%20awesome%20project!`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Share ${props.title} project via reddit`}
               >
                 <Icon icon="dashicons:reddit" /> Reddit
               </a>
@@ -110,6 +117,7 @@ function Project(props) {
                 href={`https://api.whatsapp.com/send?text=Check%20out%20this%20awesome%20project!%20${props.link}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Share ${props.title} project via whatsapp`}
               >
                 <Icon icon="ic:baseline-whatsapp" /> WhatsApp
               </a>
@@ -119,6 +127,7 @@ function Project(props) {
                 href={`https://www.linkedin.com/sharing/share-offsite/?url=${props.link}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Share ${props.title} project via linkedin`}
               >
                 <Icon icon="jam:linkedin" /> LinkedIn
               </a>

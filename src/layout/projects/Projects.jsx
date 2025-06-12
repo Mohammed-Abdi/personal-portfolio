@@ -33,6 +33,7 @@ function Projects() {
         href="https://github.com/Mohammed-Abdi?tab=repositories"
         target="_blank"
         className="more-projects"
+        aria-label="See more of mohammed's projects in github"
       >
         See More
       </a>

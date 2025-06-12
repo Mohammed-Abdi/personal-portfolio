@@ -4,7 +4,11 @@ import { Icon } from "@iconify/react";
 function Job(props) {
   return (
     <div className="job">
-      <a href={props.link} className="wrapper">
+      <a
+        href={props.link}
+        className="wrapper"
+        aria-label={`Visit ${props.name} official website`}
+      >
         <div className="image-wrapper">
           <Icon icon="mdi:building" className="icon" />
           <img
