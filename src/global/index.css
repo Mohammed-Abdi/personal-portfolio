@@ -10,26 +10,6 @@
   scroll-behavior: smooth;
 }
 
-:root {
-  --dark-clr: #09090b;
-  --light-clr: #fafafa;
-  --border-light: #d2cfff37;
-  --border-dark: #000000;
-  --hover-dark: #0000001c;
-  --hover-light: #ffffff1c;
-  --border-radius: 0.5rem;
-  --padding: 1.25rem;
-  --gradient: conic-gradient(
-    from 180deg at 50% 50%,
-    #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5,
-    #feda75
-  );
-}
-
 body {
   background-color: var(--dark-clr);
   color: var(--light-clr);
