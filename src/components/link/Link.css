@@ -11,10 +11,6 @@
   transition: background 0.3s ease-in-out;
 }
 
-.social-link:hover {
-  background-color: var(--hover-light);
-}
-
 .social-link-icon {
   font-size: 24px;
 }
@@ -36,6 +32,9 @@
 }
 
 @media (min-width: 768px) {
+  .social-link:hover {
+    background-color: var(--hover-light);
+  }
   .social-link:hover .tool-tip {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.7s;
