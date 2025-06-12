@@ -25,6 +25,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: var(--padding);
+  gap: var(--bg-size);
   min-height: 100vh;
 }
