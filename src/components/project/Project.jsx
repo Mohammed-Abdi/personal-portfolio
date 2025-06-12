@@ -29,11 +29,21 @@ function Project(props) {
         </div>
       </div>
       <div className="link-button">
-        <a href="" className="btn live-preview">
+        <a
+          href={props.link}
+          className="btn live-preview"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon icon="icon-park-outline:share" />
           Preview
         </a>
-        <a href="" className="btn source-code">
+        <a
+          href={props.repo}
+          className="btn source-code"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon icon="grommet-icons:github" />
           Source
         </a>
