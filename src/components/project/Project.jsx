@@ -60,7 +60,7 @@ function Project(props) {
           rel="noopener noreferrer"
         >
           <Icon icon="grommet-icons:github" />
-          Source
+          Source Code
         </a>
         <div href="" className="share">
           <Icon icon="ooui:share" />
