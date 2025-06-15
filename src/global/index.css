@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
@@ -16,7 +17,6 @@ body {
   color: var(--light-clr);
   width: min(43.75rem, 100% - 2.5rem);
   margin-inline: auto;
-  font-family: "Outfit", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
