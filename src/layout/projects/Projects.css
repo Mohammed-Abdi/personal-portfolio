@@ -8,6 +8,7 @@
   opacity: 0;
   transform: translate(0, 2.5rem);
   transition: all 0.7s ease-in-out;
+  transition-delay: 0.1s;
 }
 
 .projects.show {
@@ -79,4 +80,10 @@
 
 .projects .more-projects:hover {
   background: var(--hover-light);
+}
+
+@media (max-width: 700px) {
+  .projects.hidden {
+    transition-delay: 0.6s;
+  }
 }
