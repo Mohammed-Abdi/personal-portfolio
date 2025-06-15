@@ -12,6 +12,17 @@
   gap: 0.625rem;
 }
 
+.wrapper.hidden {
+  opacity: 0;
+  transform: translate(0, 2.5rem);
+  transition: all 0.7s ease-in-out;
+}
+
+.wrapper.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .wrapper .section-title {
   transform: translateX(10px);
 }

@@ -4,9 +4,9 @@ import Job from "../../components/job/Job.jsx";
 
 function Experience() {
   return (
-    <div className="wrapper">
+    <div className="wrapper hidden">
       <span className="section-title">Experience</span>
-      <div className="experiences hidden">
+      <div className="experiences">
         {experiences.map((exp, index) => {
           return (
             <Job

@@ -4,9 +4,9 @@ import Job from "../../components/job/Job.jsx";
 
 function Education() {
   return (
-    <div className="wrapper">
+    <div className="wrapper hidden">
       <span className="section-title">Education</span>
-      <div className="education hidden">
+      <div className="education">
         {education.map((exp, index) => {
           return (
             <Job
