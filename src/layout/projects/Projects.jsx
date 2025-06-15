@@ -7,7 +7,7 @@ import { useState } from "react";
 function Projects() {
   const [search, setSearch] = useState("");
   return (
-    <section className="projects">
+    <section className="projects hidden">
       <span className="section-title">FEATURED PROJECTS</span>
       <div className="search">
         <input

@@ -1,10 +1,18 @@
 /* projects section */
-.projects {
+.projects.hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--bg-size);
   position: relative;
+  opacity: 0;
+  transform: translate(0, 2.5rem);
+  transition: all 0.7s ease-in-out;
+}
+
+.projects.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* Search container */
