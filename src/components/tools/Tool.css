@@ -27,14 +27,26 @@
   background-color: var(--border-light);
 }
 
-/* filled portion of the tube */
+/* Filled portion of the tube - initially hidden */
 .tool .tech-info .tube .fill {
   height: 4px;
+  width: 0;
   border-radius: inherit;
   background-color: var(--light-clr);
+  transition: width 1.5s ease-in-out;
 }
 
-/* percentage label text */
+/* Define the custom target width per element in CSS or inline style */
+.tool .tech-info .tube .fill[data-width] {
+  --fill-target: attr(data-width %);
+}
+
+/* Animate to target width when .show is added */
+.tool .tech-info .tube .fill.show {
+  width: var(--fill-target, 100%);
+}
+
+/* Percentage label text */
 .tool .tech-info .percentage {
   font-size: 0.75rem;
   opacity: 0.7;

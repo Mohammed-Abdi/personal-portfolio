@@ -8,7 +8,7 @@ function Tool(props) {
       <div className="tech-info">
         <span>{props.name}</span>
         <div className="tube">
-          <div className="fill" style={{ width: `${props.rate}%` }}></div>
+          <div className="fill hidden" data-width={props.rate}></div>
         </div>
         <span className="percentage">{props.rate}%</span>
       </div>
