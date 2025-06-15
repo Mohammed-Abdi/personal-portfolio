@@ -18,9 +18,17 @@
 }
 
 /* Wrapper for about-me */
-.about .about-me {
+.about .about-me.hidden {
+  opacity: 0;
+  transform: translate(-2.5rem, 0);
   align-items: center;
   gap: 1rem;
+  transition: all 0.7s ease-in-out;
+}
+
+.about .about-me.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* Circular image wrapper with border */
@@ -81,13 +89,21 @@
 }
 
 /* social links */
-.about .social-links {
+.about .social-links.hidden {
   display: flex;
   align-items: center;
   gap: var(--sm-size);
   position: relative;
   padding-top: var(--md-size);
   min-width: 310px;
+  transform: translate(2.5rem, 0);
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.about .social-links.show {
+  opacity: 1;
+  transform: translate(0, 01);
 }
 
 /* Title text for links */
@@ -103,5 +119,19 @@
 @media (max-width: 700px) {
   .about .my {
     width: 100%;
+  }
+  /* Wrapper for about-me */
+  .about .about-me.hidden {
+    transform: translate(0, 2.5rem);
+  }
+  .about .about-me.show {
+    transform: translate(0, 0);
+  }
+  /* social links */
+  .about .social-links.hidden {
+    transform: translate(0, 2.5rem);
+  }
+  .about .social-links.show {
+    transform: translate(0, 0);
   }
 }
