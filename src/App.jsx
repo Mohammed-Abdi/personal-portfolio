@@ -29,7 +29,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.125 }
     );
 
     const hiddenElements = document.querySelectorAll(".hidden");
