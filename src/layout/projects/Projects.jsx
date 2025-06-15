@@ -53,8 +53,16 @@ function Projects() {
         </div>
       </div>
       <div className="projects-wrapper">
-        {search === ""
-          ? projects
+        {(search === ""
+          ? projects.filter((project) => project.year === Number(year))
+          : projects.filter((project) =>
+              project.title
+                .toLocaleLowerCase()
+                .includes(search.toLocaleLowerCase())
+            )
+        ).length > 0 ? (
+          search === "" ? (
+            projects
               .filter((project) => project.year === Number(year))
               .map((project, index) => {
                 return (
@@ -69,7 +77,8 @@ function Projects() {
                   />
                 );
               })
-          : projects
+          ) : (
+            projects
               .filter((project) =>
                 project.title.toLowerCase().includes(search.toLowerCase())
               )
@@ -85,7 +94,14 @@ function Projects() {
                     techStack={project.techStack}
                   />
                 );
-              })}
+              })
+          )
+        ) : (
+          <div className="not-found">
+            <Icon icon="line-md:emoji-frown-open" className="icon" />
+            <p>Project not found</p>
+          </div>
+        )}
       </div>
       <a
         href="https://github.com/Mohammed-Abdi?tab=repositories"

@@ -83,6 +83,28 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: var(--bg-size);
+  min-height: 25.57rem;
+  position: relative;
+}
+
+.projects .not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects .not-found .icon {
+  font-size: 5rem;
+}
+
+.projects .not-found p {
+  white-space: nowrap;
+  font-size: 0.875rem;
 }
 
 /* See more button */
