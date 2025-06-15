@@ -37,14 +37,14 @@
 }
 
 /* Define the custom target width per element in CSS or inline style */
-.tool .tech-info .tube .fill[data-width] {
+/* .tool .tech-info .tube .fill[data-width] {
   --fill-target: attr(data-width %);
-}
+} */
 
 /* Animate to target width when .show is added */
-.tool .tech-info .tube .fill.show {
+/* .tool .tech-info .tube .fill.show {
   width: var(--fill-target, 100%);
-}
+} */
 
 /* Percentage label text */
 .tool .tech-info .percentage {
