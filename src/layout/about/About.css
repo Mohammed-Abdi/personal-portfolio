@@ -18,16 +18,13 @@
 }
 
 /* Wrapper for about-me */
-.about .about-me.hidden {
-  opacity: 0;
-  transform: translate(-2.5rem, 0);
+.about-me.hidden {
   align-items: center;
   gap: 1rem;
-  transition: all 0.7s ease-in-out;
+  transform: translate(-2.5rem, 0);
 }
 
-.about .about-me.show {
-  opacity: 1;
+.about-me.show {
   transform: translate(0, 0);
 }
 
@@ -97,12 +94,8 @@
   padding-top: var(--md-size);
   min-width: 310px;
   transform: translate(2.5rem, 0);
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
 }
-
 .about .social-links.show {
-  opacity: 1;
   transform: translate(0, 0);
 }
 
