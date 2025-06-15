@@ -1,5 +1,13 @@
-.education {
+.education.hidden {
   border: 1px solid var(--border-light);
   padding: 1rem;
   border-radius: 0.5rem;
+  opacity: 0;
+  transform: translate(0, 2.5rem);
+  transition: all 0.7s ease-in-out;
+}
+
+.education.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }

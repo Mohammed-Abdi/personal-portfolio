@@ -6,7 +6,7 @@ function Education() {
   return (
     <div className="wrapper">
       <span className="section-title">Education</span>
-      <div className="education">
+      <div className="education hidden">
         {education.map((exp, index) => {
           return (
             <Job

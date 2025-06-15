@@ -6,7 +6,7 @@ function Experience() {
   return (
     <div className="wrapper">
       <span className="section-title">Experience</span>
-      <div className="experiences">
+      <div className="experiences hidden">
         {experiences.map((exp, index) => {
           return (
             <Job
