@@ -1,5 +1,5 @@
 /* skills section */
-.skills {
+.skills.hidden {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,4 +8,12 @@
   padding: var(--bg-size);
   border-radius: var(--radius);
   border: 1px solid var(--border-light);
+  opacity: 0;
+  transform: translate(0, 2.5rem);
+  transition: all 0.7s ease-in-out;
+}
+
+.skills.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
