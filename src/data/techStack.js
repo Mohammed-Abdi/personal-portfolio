@@ -2,7 +2,7 @@ const techStack = [
   {
     name: "React.js",
     icon: "mdi:react",
-    rate: 60,
+    rate: 70,
   },
   {
     name: "CSS",
