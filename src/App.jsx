@@ -12,26 +12,17 @@ function App() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const el = entry.target;
-
           if (entry.isIntersecting) {
-            el.classList.add("show");
-
-            if (el.dataset.width) {
-              el.style.width = el.dataset.width + "%";
-            }
+            entry.target.classList.add("show");
           } else {
-            el.classList.remove("show");
-
-            if (el.dataset.width) {
-              el.style.width = "0";
-            }
+            entry.target.classList.remove("show");
           }
         });
       },
-      { threshold: 0.001 }
+      {
+        threshold: 0.01,
+      }
     );
-
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
 
@@ -39,7 +30,6 @@ function App() {
       hiddenElements.forEach((el) => observer.unobserve(el));
     };
   }, []);
-
   return (
     <>
       <Header />

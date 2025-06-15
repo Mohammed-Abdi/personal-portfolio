@@ -25,15 +25,23 @@
   height: 4px;
   border-radius: 2px;
   background-color: var(--border-light);
+  overflow: hidden;
 }
 
-/* Filled portion of the tube - initially hidden */
 .tool .tech-info .tube .fill {
   height: 4px;
-  width: 0;
+  width: 100%;
   border-radius: inherit;
   background-color: var(--light-clr);
-  transition: width 2.5s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+  will-change: transform;
+  opacity: 1;
+  transition: all 2.5s ease-in-out;
+}
+
+.tool .tech-info .tube .fill.show {
+  transform: scaleX(1);
 }
 
 /* Percentage label text */
