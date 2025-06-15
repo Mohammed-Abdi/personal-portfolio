@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 function Project(props) {
   return (
-    <div className="project hidden">
+    <div className="project">
       <div className="img-wrapper">
         <Icon icon="ph:image-square" className="image-icon" />
         <img
