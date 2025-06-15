@@ -130,6 +130,7 @@
   /* social links */
   .about .social-links.hidden {
     transform: translate(0, 2.5rem);
+    transition-delay: 0.3s;
   }
   .about .social-links.show {
     transform: translate(0, 0);
