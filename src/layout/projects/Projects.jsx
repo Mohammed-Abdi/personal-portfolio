@@ -5,7 +5,17 @@ import { Icon } from "@iconify/react";
 import { useState } from "react";
 
 function Projects() {
+  const currentYear = new Date().getFullYear();
   const [search, setSearch] = useState("");
+  const [year, setYear] = useState(currentYear);
+  const [dropDown, setDropDown] = useState(false);
+  function toggleDropDown() {
+    setDropDown(!dropDown);
+    handleFilter();
+  }
+  function handleFilter(e) {
+    setYear(e.target.value);
+  }
   return (
     <section className="projects hidden">
       <span className="section-title">FEATURED PROJECTS</span>
@@ -18,10 +28,18 @@ function Projects() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button className="filter">
-          <Icon icon="ep:filter" className="filter-icon" />
-          Filter
-        </button>
+        <div className="filter-button" onClick={toggleDropDown}>
+          {year}
+          <Icon icon="fe:drop-down" />
+          <div className={`years ${dropDown ? "dropped" : ""}`}>
+            <button value={2025} onClick={handleFilter}>
+              2025
+            </button>
+            <button value={2024} onClick={handleFilter}>
+              2024
+            </button>
+          </div>
+        </div>
       </div>
       <div className="projects-wrapper">
         {search === ""
