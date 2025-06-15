@@ -7,7 +7,7 @@ const projects = [
     techStack: ["React", "Vanilla.js", "CSS"],
     link: "https://mohammedabdi.vercel.app",
     repo: "https://github.com/Mohammed-Abdi/personal-portfolio",
-    isFeatured: true,
+    year: 2025,
   },
   {
     img: "preview/recipe.webp",
@@ -17,7 +17,7 @@ const projects = [
     techStack: ["Vanilla.js", "CSS", "HTML"],
     link: "https://recipes-recipes.vercel.app",
     repo: "https://github.com/Mohammed-Abdi/Recipes",
-    isFeatured: true,
+    year: 2025,
   },
 ];
 
