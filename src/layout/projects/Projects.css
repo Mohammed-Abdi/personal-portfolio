@@ -41,21 +41,20 @@
   border: 1px solid var(--border-light);
   border-radius: var(--radius-btn);
   background: var(--hover-light);
-  width: 5rem;
+  width: 70px;
   position: relative;
-  z-index: 2;
   cursor: pointer;
+  z-index: 1;
 }
 
 .projects .search .filter-button .years {
   display: none;
   flex-direction: column;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -65px;
+  right: 0;
+  bottom: -70px;
   border: 1px solid var(--border-light);
-  width: 4.4rem;
+  width: 70px;
   border-radius: var(--radius-btn);
   background-color: var(--dark-clr);
   overflow: hidden;
