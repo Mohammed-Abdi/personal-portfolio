@@ -55,7 +55,7 @@ function Projects() {
       <div className="projects-wrapper">
         {search === ""
           ? projects
-              .filter((project) => project.isFeatured === true)
+              .filter((project) => project.year === Number(year))
               .map((project, index) => {
                 return (
                   <Project
