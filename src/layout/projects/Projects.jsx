@@ -9,12 +9,11 @@ function Projects() {
   const [search, setSearch] = useState("");
   const [year, setYear] = useState(currentYear);
   const [dropDown, setDropDown] = useState(false);
-  function toggleDropDown() {
-    setDropDown(!dropDown);
-    handleFilter();
-  }
   function handleFilter(e) {
     setYear(e.target.value);
+  }
+  function toggleDropDown() {
+    setDropDown(!dropDown);
   }
   return (
     <section className="projects hidden">
@@ -32,10 +31,22 @@ function Projects() {
           {year}
           <Icon icon={dropDown ? "fe:drop-up" : "fe:drop-down"} />
           <div className={`years ${dropDown ? "dropped" : ""}`}>
-            <button value={2025} onClick={handleFilter}>
+            <button
+              value={2025}
+              onClick={(e) => {
+                handleFilter(e);
+                toggleDropDown();
+              }}
+            >
               2025
             </button>
-            <button value={2024} onClick={handleFilter}>
+            <button
+              value={2024}
+              onClick={(e) => {
+                handleFilter(e);
+                toggleDropDown();
+              }}
+            >
               2024
             </button>
           </div>
