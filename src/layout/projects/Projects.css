@@ -84,6 +84,6 @@
 
 @media (max-width: 700px) {
   .projects.hidden {
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
   }
 }
