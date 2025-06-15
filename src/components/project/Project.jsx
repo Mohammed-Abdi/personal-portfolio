@@ -1,7 +1,12 @@
+import { useState } from "react";
 import "./Project.css";
 import { Icon } from "@iconify/react";
 
 function Project(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  function toggleShare() {
+    setIsOpen(!isOpen);
+  }
   return (
     <div className="project">
       <div className="img-wrapper">
@@ -64,9 +69,13 @@ function Project(props) {
           <Icon icon="grommet-icons:github" />
           Source Code
         </a>
-        <div className="share">
-          <Icon icon="ooui:share" />
-          <div className="share-links">
+        <div className="share" onClick={toggleShare}>
+          <Icon
+            icon={
+              isOpen ? "line-md:menu-to-close-alt-transition" : "ooui:share"
+            }
+          />
+          <div className={`share-links ${isOpen ? "open" : ""}`}>
             <>
               <a
                 href={`https://t.me/share/url?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}

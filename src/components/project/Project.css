@@ -158,8 +158,12 @@
   padding: var(--md-size);
   gap: var(--sm-size);
   z-index: 1;
-  bottom: var(--bg-size);
+  bottom: 2.5rem;
   right: 0;
+}
+
+.share-links.open {
+  display: flex;
 }
 
 /* link in list of share link */
@@ -179,9 +183,4 @@
 /* hover effect for links in share link */
 .share-links a:hover {
   background-color: var(--hover-light);
-}
-
-/* opens the share link list */
-.project .link-button .share:hover .share-links {
-  display: flex;
 }
