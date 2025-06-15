@@ -24,23 +24,39 @@ function Projects() {
         </button>
       </div>
       <div className="projects-wrapper">
-        {projects
-          .filter((project) =>
-            project.title.toLowerCase().includes(search.toLowerCase())
-          )
-          .map((project, index) => {
-            return (
-              <Project
-                key={index}
-                image={project.img}
-                title={project.title}
-                description={project.description}
-                link={project.link}
-                repo={project.repo}
-                techStack={project.techStack}
-              />
-            );
-          })}
+        {search === ""
+          ? projects
+              .filter((project) => project.isFeatured === true)
+              .map((project, index) => {
+                return (
+                  <Project
+                    key={index}
+                    image={project.img}
+                    title={project.title}
+                    description={project.description}
+                    link={project.link}
+                    repo={project.repo}
+                    techStack={project.techStack}
+                  />
+                );
+              })
+          : projects
+              .filter((project) =>
+                project.title.toLowerCase().includes(search.toLowerCase())
+              )
+              .map((project, index) => {
+                return (
+                  <Project
+                    key={index}
+                    image={project.img}
+                    title={project.title}
+                    description={project.description}
+                    link={project.link}
+                    repo={project.repo}
+                    techStack={project.techStack}
+                  />
+                );
+              })}
       </div>
       <a
         href="https://github.com/Mohammed-Abdi?tab=repositories"
