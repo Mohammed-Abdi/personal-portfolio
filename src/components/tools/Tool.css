@@ -33,7 +33,7 @@
   width: 0;
   border-radius: inherit;
   background-color: var(--light-clr);
-  transition: width 1.5s ease-in-out;
+  transition: width 2.5s ease-in-out;
 }
 
 /* Define the custom target width per element in CSS or inline style */
