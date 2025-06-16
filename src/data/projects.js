@@ -1,5 +1,15 @@
 const projects = [
   {
+    img: "preview/trip-tote.webp",
+    title: "Trip Tote",
+    description:
+      "A travel packing assistant that helps you organize and track your essentials using emoji-driven UI making packing stress-free and fun.",
+    techStack: ["React", "Vanilla.js", "CSS"],
+    link: "https://trip-tote.vercel.app/",
+    repo: "https://github.com/Mohammed-Abdi/trip-tote",
+    year: 2025,
+  },
+  {
     img: "preview/personal-portfolio.webp",
     title: "Personal Portfolio",
     description:
@@ -17,7 +27,7 @@ const projects = [
     techStack: ["Vanilla.js", "CSS", "HTML"],
     link: "https://recipes-recipes.vercel.app",
     repo: "https://github.com/Mohammed-Abdi/Recipes",
-    year: 2025,
+    year: 2024,
   },
 ];
 
