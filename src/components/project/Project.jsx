@@ -14,7 +14,6 @@ function Project(props) {
         <img
           src={props.image}
           alt={`${props.title} project preview`}
-          loading="lazy"
           width={1280}
           height={720}
         />
