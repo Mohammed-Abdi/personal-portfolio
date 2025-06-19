@@ -20,10 +20,7 @@ function About() {
           <div className="personal-info-wrapper">
             <span className="name">Mohammed Abdi</span>
             <span className="profession">Frontend Engineer</span>
-            <span className="location">
-              <Icon icon="weui:location-filled" />
-              Dire Dawa, Ethiopia
-            </span>
+            <span className="location">Based in Dire Dawa, Ethiopia</span>
           </div>
         </div>
         <div className="my social-links hidden">
