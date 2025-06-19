@@ -11,13 +11,4 @@
   --md-size: 0.625rem;
   --sm-size: 0.25rem;
   --icon-md: 24px;
-  --gradient: conic-gradient(
-    from 180deg at 50% 50%,
-    #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5,
-    #feda75
-  );
 }

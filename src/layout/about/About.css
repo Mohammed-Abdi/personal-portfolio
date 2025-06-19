@@ -48,7 +48,7 @@
   content: "";
   height: 54px;
   aspect-ratio: 1/1;
-  background: var(--gradient);
+  background-color: var(--accent-clr);
   border-radius: inherit;
   z-index: -10;
 }
