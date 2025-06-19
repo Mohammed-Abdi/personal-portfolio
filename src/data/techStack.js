@@ -7,7 +7,7 @@ const techStack = [
   {
     name: "Tailwind",
     icon: "devicon:tailwindcss",
-    experience: "0mo+",
+    experience: "1mo+",
   },
   {
     name: "Vanilla.js",
