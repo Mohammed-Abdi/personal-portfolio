@@ -5,7 +5,7 @@ import Job from "../../components/job/Job.jsx";
 function Experience() {
   return (
     <div className="wrapper hidden">
-      <span className="section-title">Experience</span>
+      <span className="section-title">EXPERIENCE</span>
       <div className="experiences">
         {experiences.map((exp, index) => {
           return (

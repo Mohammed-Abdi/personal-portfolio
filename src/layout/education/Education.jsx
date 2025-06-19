@@ -5,7 +5,7 @@ import Job from "../../components/job/Job.jsx";
 function Education() {
   return (
     <div className="wrapper hidden">
-      <span className="section-title">Education</span>
+      <span className="section-title">EDUCATION</span>
       <div className="education">
         {education.map((exp, index) => {
           return (

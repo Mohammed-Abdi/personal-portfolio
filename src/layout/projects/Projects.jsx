@@ -17,7 +17,7 @@ function Projects() {
   }
   return (
     <section className="projects hidden">
-      <span className="section-title">RECENT PROJECTS</span>
+      <span className="section-title">FEATURED PROJECTS</span>
       <div className="search">
         <input
           type="text"
