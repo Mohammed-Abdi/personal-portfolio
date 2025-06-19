@@ -17,17 +17,18 @@
 }
 
 .tool-tip {
-  font-size: 0.875rem;
-  background-color: var(--light-clr);
-  color: var(--dark-clr);
+  font-size: 0.75rem;
+  background-color: var(--dark-clr);
+  color: var(--light-clr);
   font-weight: 500;
-  padding: 0.125rem 0.25rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.125rem;
   position: absolute;
   top: 120%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
+  border: 1px solid var(--border-light);
   transition: opacity 0.3s ease-out 0s;
 }
 
