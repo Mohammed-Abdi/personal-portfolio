@@ -29,7 +29,7 @@ function Projects() {
         />
         <div className="filter-button" onClick={toggleDropDown}>
           {year}
-          <Icon icon={dropDown ? "fe:drop-up" : "fe:drop-down"} />
+          <Icon icon="fe:drop-down" />
           <div className={`years ${dropDown ? "dropped" : ""}`}>
             <button
               value={2025}
