@@ -72,7 +72,7 @@ function Project(props) {
           Source Code
         </a>
         <div className="share" onClick={toggleShare}>
-          <Icon icon={isOpen ? "mingcute:close-fill" : "ooui:share"} />
+          <Icon icon={isOpen ? "material-symbols:close" : "ooui:share"} />
           <div className={`share-links ${isOpen ? "open" : ""}`}>
             <>
               <a
