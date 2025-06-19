@@ -22,6 +22,7 @@ function About() {
             <span className="profession">Frontend Engineer</span>
             <span className="location">Based in Dire Dawa, Ethiopia</span>
           </div>
+          <Icon icon="material-symbols:verified-outline" className="legit" />
         </div>
         <div className="my social-links hidden">
           <span className="link-title">Feel free to reach out!</span>

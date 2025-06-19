@@ -22,6 +22,7 @@
   align-items: center;
   gap: 1rem;
   transform: translate(-2.5rem, 0);
+  position: relative;
 }
 
 .about-me.show {
@@ -106,6 +107,12 @@
   top: 7px;
   left: 30px;
   opacity: 0.7;
+}
+
+.legit {
+  position: absolute;
+  font-size: calc(var(--md-size) * 2.25);
+  right: var(--bg-size);
 }
 
 /* full width on smaller devices */
