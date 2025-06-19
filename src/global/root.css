@@ -1,10 +1,10 @@
 :root {
   --dark-clr: #09090b;
-  --light-clr: #fafafa;
+  --light-clr: #fefefe;
   --accent-clr: #14b7a6;
   --accent-tr: #14b7a71f;
-  --border-light: #d2cfff37;
-  --border-dark: #000000;
+  --border-light: #e4e4e741;
+  --border-dark: #00000025;
   --hover-dark: #0000001c;
   --hover-light: #ffffff1c;
   --radius: 0.5rem;
