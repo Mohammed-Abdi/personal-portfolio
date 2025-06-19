@@ -1,12 +1,12 @@
 :root {
-  --light-clr: #09090b;
-  --dark-clr: #fefefe;
+  --dark-clr: #09090b;
+  --light-clr: #fefefe;
   --accent-clr: #14b7a6;
   --accent-tr: #14b7a71f;
-  --border-dark: #e4e4e741;
-  --border-light: #00000025;
-  --hover-light: #0000001c;
-  --hover-dark: #ffffff1c;
+  --border-dark: #00000025;
+  --border-light: #e4e4e741;
+  --hover-dark: #0000001c;
+  --hover-light: #ffffff1c;
   --radius: 0.5rem;
   --radius-btn: 0.25rem;
   --bg-size: 1.25rem;
