@@ -21,6 +21,5 @@
 @media (max-width: 700px) {
   .skills.hidden {
     transition-delay: 0.2s;
-    /* justify-content: start; */
   }
 }
