@@ -1,23 +1,23 @@
 const techStack = [
   {
     name: "React.js",
-    icon: "mdi:react",
-    rate: 70,
+    icon: "devicon:react",
+    experience: "2mo+",
   },
   {
-    name: "CSS",
-    icon: "ri:css3-fill",
-    rate: 92,
+    name: "Tailwind",
+    icon: "devicon:tailwindcss",
+    experience: "0mo+",
   },
   {
     name: "Vanilla.js",
-    icon: "ant-design:java-script-outlined",
-    rate: 87,
+    icon: "logos:javascript",
+    experience: "6mo+",
   },
   {
     name: "C++",
-    icon: "nonicons:c-plusplus-16",
-    rate: 80,
+    icon: "devicon:cplusplus",
+    experience: "1yr+",
   },
 ];
 

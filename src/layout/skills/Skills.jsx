@@ -13,7 +13,7 @@ function Skills() {
             name={tech.name}
             link={tech.link}
             icon={tech.icon}
-            rate={tech.rate}
+            experience={tech.experience}
           />
         );
       })}

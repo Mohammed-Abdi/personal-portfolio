@@ -1,19 +1,13 @@
 import "./Tool.css";
 import { Icon } from "@iconify/react";
 
-function Tool(props) {
+function Tool({ icon, name, experience }) {
   return (
     <div className="tool">
-      <Icon icon={props.icon} className="icon" />
+      <Icon icon={icon} className="icon" />
       <div className="tech-info">
-        <span>{props.name}</span>
-        <div className="tube">
-          <div
-            className="fill hidden"
-            style={{ width: `${props.rate}%` }}
-          ></div>
-        </div>
-        <span className="percentage">{props.rate}%</span>
+        <span>{name}</span>
+        <span className="experience">{`${experience} exp`}</span>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--bg-size);
+  gap: calc(var(--md-size) * 3);
   padding: var(--bg-size);
   border-radius: var(--radius);
   border: 1px solid var(--border-light);
@@ -21,5 +21,6 @@
 @media (max-width: 700px) {
   .skills.hidden {
     transition-delay: 0.2s;
+    /* justify-content: start; */
   }
 }
