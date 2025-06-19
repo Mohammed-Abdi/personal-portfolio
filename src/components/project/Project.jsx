@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Project.css";
 import { Icon } from "@iconify/react";
+import EmphasizedText from "../emphasized-text/EmphasizedText.jsx";
 
 function Project(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +15,14 @@ function Project(props) {
         <img
           src={props.image}
           alt={`${props.title} project preview`}
-          loading="lazy"
           width={1280}
           height={720}
         />
       </div>
       <div className="info-wrapper">
-        <span className="project-title">{props.title}</span>
+        <span className="project-title">
+          <EmphasizedText text={props.title} />
+        </span>
         <p className="description">{props.description}</p>
         <div className="tech-used">
           <span className="tech-stack">Technologies Used</span>
