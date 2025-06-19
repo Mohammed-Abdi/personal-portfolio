@@ -47,6 +47,7 @@
   z-index: 1;
 }
 
+/* Years dropdown inside filter button */
 .projects .search .filter-button .years {
   display: none;
   flex-direction: column;
@@ -87,6 +88,7 @@
   position: relative;
 }
 
+/* Not found message */
 .projects .not-found {
   display: flex;
   flex-direction: column;
