@@ -3,65 +3,55 @@
 </p>
 
 <div align="center">
-  <h1>Mohammed Abdi - Portfolio</h1>
 
   <a href="https://mohammedabdi.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/Visit-Portfolio-0A66C2?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio" />
   </a>
 </div>
 
----
+# 🧑‍💻 Personal Portfolio
 
-## 👋 Hello there!
+A sleek, high-performance developer portfolio showcasing my work, skills, and personality. Built with modern web technologies to deliver smooth animations, responsive layouts, and a blazing-fast user experience ⚡
 
-I'm **Mohammed Abdi**, a creative and detail-focused **Frontend Developer** from **Ethiopia**.  
-I specialize in building **interactive**, **responsive**, and **cleanly designed** web interfaces using modern frontend technologies.
+## ✨ Technologies
 
-> 💡 _“Turning ideas into clean, scalable UI solutions.”_
+- `React`
+- `JavaScript`
+- `CSS Modules`
+- `Vite`
+- `Vercel`
 
----
+## 🚀 Features
 
-## 🚀 My Live Portfolio
+- ⚡ Perfect Lighthouse scores across Performance, Accessibility, SEO, and Best Practices
+- 🎨 Clean, responsive layout with a modern UI
+- 🖼️ Interactive projects section with subtle hover and scroll animations
+- 📱 Mobile-first, fully responsive design
+- 🧭 Smooth navigation with scroll and motion effects
+- 🌐 Deployed on Vercel for fast, global delivery
 
-🔗 **Check it out here →** [mohammedabdi.vercel.app](https://mohammedabdi.vercel.app)
+## 🚀 Getting Started
 
-Explore:
+#### 1. Fork the Repo
 
-- 🌟 Highlighted Projects
-- 🧰 Tech Stack & Skills
-- 📬 Contact Section
+First, fork the repository on GitHub to your own account.
 
----
+#### 2. Clone Your Fork
 
-## ⚡ Tech Stack
+```bash
+git clone https://github.com/Mohammed-Abdi/personal-portfolio.git
+cd personal-portfolio
 
-| **Core Tech** | **Styling** | **Deployment** | **Tools** |
-| ------------- | ----------- | -------------- | --------- |
-| React         | CSS Modules | Vercel         | Vite      |
-| JavaScript    | —           |                | Git       |
-| HTML5         | —           | —              | Vs Code   |
+```
 
----
+#### 2.Install Dependencies
 
-## 🌟 What I Bring
+```bash
+npm install
+```
 
-- 💻 Pixel-perfect UI development
-- ⚛️ Component-based design with React
-- 📱 Responsive layouts using CSS Modules
-- 🎯 Clean, maintainable JavaScript logic
-- 🧠 Problem-solving mindset with attention to detail
-- 🚀 Continuous deployment with Vercel
+#### 4. Start the Development Server
 
----
-
-## 📫 Connect With Me
-
-I'm always open to collaboration, freelance gigs, or just a friendly dev chat!
-
-- [🌐 LinkedIn](https://linkedin.com/in/mohammed-abdi-tahir)
-- [🐱 GitHub](https://github.com/mohammed-abdi)
-- 📩 Email: `mohammedabdi.ta@gmail.com`
-
----
-
-_Thanks for visiting my README! Feel free to check out my portfolio and drop a star if you like what you see!_ 👨‍💻✨
+```bash
+npm run dev
+```
