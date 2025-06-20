@@ -33,13 +33,13 @@ Explore:
 
 ---
 
-## 🧰 My Frontend Tech Stack
+## ⚡ Tech Stack
 
-| Core Tech                                                                                                | Styling                                                                                              | Deployment                                                                                                                                                                                                 | Tools                                                                                                                                                                                                                                                                                           |
-| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)               | ![CSS Modules](https://img.shields.io/badge/CSS_Modules-264DE4?style=flat&logo=css3&logoColor=white) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) <br> ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-121013?style=flat&logo=github&logoColor=white) | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white) <br> ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) <br> ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) |
-| ![JavaScript](https://img.shields.io/badge/Vanilla_JS-F7DF1E?style=flat&logo=javascript&logoColor=black) | —                                                                                                    | —                                                                                                                                                                                                          | —                                                                                                                                                                                                                                                                                               |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)                | —                                                                                                    | —                                                                                                                                                                                                          | —                                                                                                                                                                                                                                                                                               |
+| **Core Tech** | **Styling** | **Deployment** | **Tools** |
+| ------------- | ----------- | -------------- | --------- |
+| React         | CSS Modules | Vercel         | Vite      |
+| JavaScript    | —           |                | Git       |
+| HTML5         | —           | —              | Vs Code   |
 
 ---
 
