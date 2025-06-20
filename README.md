@@ -13,7 +13,7 @@
 
 A sleek, high-performance developer portfolio showcasing my work, skills, and personality. Built with modern web technologies to deliver smooth animations, responsive layouts, and a blazing-fast user experience ⚡
 
-## ✨ Technologies
+## ⚡ Technologies
 
 - `React`
 - `JavaScript`
@@ -30,7 +30,7 @@ A sleek, high-performance developer portfolio showcasing my work, skills, and pe
 - 🧭 Smooth navigation with scroll and motion effects
 - 🌐 Deployed on Vercel for fast, global delivery
 
-## 🚀 Getting Started
+## 📦 Getting Started
 
 #### 1. Fork the Repo
 
