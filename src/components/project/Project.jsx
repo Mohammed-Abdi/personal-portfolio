@@ -30,7 +30,7 @@ function Project(props) {
             let icon;
             if (tech == "React") {
               icon = "mdi:react";
-            } else if (tech === "Vanilla.js") {
+            } else if (tech === "Javascript") {
               icon = "ant-design:java-script-outlined";
             } else if (tech.toLowerCase() === "css") {
               icon = "ri:css3-fill";

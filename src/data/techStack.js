@@ -1,6 +1,6 @@
 const techStack = [
   {
-    name: "React.js",
+    name: "React",
     icon: "devicon:react",
     experience: "2mo+",
   },
@@ -10,7 +10,7 @@ const techStack = [
     experience: "1mo+",
   },
   {
-    name: "Vanilla.js",
+    name: "Javascript",
     icon: "logos:javascript",
     experience: "6mo+",
   },
