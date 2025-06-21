@@ -1,36 +1,46 @@
 import "./Job.css";
-import iconMap from "../../data/iconMap";
+import { Suspense, lazy } from "react";
 
-function Job(props) {
-  const Location = iconMap["Location"];
-  const Institution = iconMap["Institution"];
+const Location = lazy(() => import("../../assets/icons/symbols/Location.jsx"));
+const Institution = lazy(() =>
+  import("../../assets/icons/symbols/Institution.jsx")
+);
+
+function Job({ link, name, logo, job, description, location, started, ended }) {
   return (
     <div className="job">
       <a
-        href={props.link}
+        href={link}
         className="wrapper"
-        aria-label={`Visit ${props.name} official website`}
+        aria-label={`Visit ${name} official website`}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <div className="image-wrapper">
-          <Institution className="icon" />
+          <Suspense fallback={<span className="icon-placeholder" />}>
+            <Institution className="icon" />
+          </Suspense>
           <img
-            src={props.logo}
-            alt={`${props.name} logo`}
+            src={logo}
+            alt={`${name} logo`}
             loading="lazy"
+            decoding="async"
             width={50}
             height={50}
           />
         </div>
       </a>
-      <span className="profession">{props.job}</span>
-      <span className="name">{props.name}</span>
+      <span className="profession">{job}</span>
+      <span className="name">{name}</span>
       <span className="location">
-        <Location />
-        {props.location}
+        <Suspense fallback={<span className="icon-placeholder" />}>
+          <Location />
+        </Suspense>
+        {location}
       </span>
-      <span className="description">{props.description}</span>
+      <span className="description">{description}</span>
       <span className="duration">
-        {props.started} - {props.ended}
+        {started} - {ended}
       </span>
     </div>
   );
