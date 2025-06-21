@@ -30,6 +30,7 @@ function Project(props) {
           alt={`${props.title} project preview`}
           width={1280}
           height={720}
+          loading="lazy"
         />
       </div>
       <div className="info-wrapper">
