@@ -106,7 +106,7 @@
 }
 
 /* different animation for larger devices */
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   .about-me.hidden {
     transform: translateX(-2.5rem);
   }
@@ -119,4 +119,4 @@
   .about .social-links.show {
     transform: translateX(0);
   }
-}
+} */
