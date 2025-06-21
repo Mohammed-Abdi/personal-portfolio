@@ -33,7 +33,7 @@
 }
 
 /* Animation starting state at hidden and visible on show */
-/* .hidden {
+.hidden {
   opacity: 0;
   transform: translateY(2.5rem);
   transition: all 0.7s ease-in-out;
@@ -42,4 +42,4 @@
 .show {
   opacity: 1;
   transform: translateY(0);
-} */
+}
