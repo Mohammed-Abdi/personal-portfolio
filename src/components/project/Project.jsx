@@ -1,17 +1,30 @@
 import { useState } from "react";
 import "./Project.css";
-import { Icon } from "@iconify/react";
 import EmphasizedText from "../emphasized-text/EmphasizedText.jsx";
+import iconMap from "../../data/iconMap.js";
 
 function Project(props) {
   const [isOpen, setIsOpen] = useState(false);
+  const Website = iconMap["Website"];
+  const SourceCode = iconMap["Github"];
+  const Close = iconMap["Close"];
+  const Share = iconMap["Share"];
+  const Preview = iconMap["Preview"];
+  const Telegram = iconMap["Telegram"];
+  const Linkedin = iconMap["Linkedin"];
+  const Facebook = iconMap["Facebook"];
+  const Email = iconMap["Email"];
+  const Reddit = iconMap["Reddit"];
+  const WhatsApp = iconMap["Whatsapp"];
+  const X = iconMap["X"];
+
   function toggleShare() {
     setIsOpen(!isOpen);
   }
   return (
     <div className="project">
       <div className="img-wrapper">
-        <Icon icon="ph:image-square" className="image-icon" />
+        <Preview className="preview" />
         <img
           src={props.image}
           alt={`${props.title} project preview`}
@@ -27,24 +40,11 @@ function Project(props) {
         <div className="tech-used">
           <span className="tech-stack">Technologies Used</span>
           {props.techStack.map((tech, index) => {
-            let icon;
-            if (tech == "React") {
-              icon = "mdi:react";
-            } else if (tech === "Javascript") {
-              icon = "ant-design:java-script-outlined";
-            } else if (tech.toLowerCase() === "css") {
-              icon = "ri:css3-fill";
-            } else if (tech === "c++") {
-              icon = "mdi:language-cpp";
-            } else if (tech.toLowerCase() === "html") {
-              icon = "flowbite:html-solid";
-            } else {
-              console.log(`icon not found for ${tech}`);
-            }
+            let Icon = iconMap[tech.icon];
             return (
               <span key={index} className="technology">
-                <Icon icon={icon} />
-                {tech}
+                <Icon />
+                {tech.name}
               </span>
             );
           })}
@@ -58,7 +58,7 @@ function Project(props) {
           rel="noopener noreferrer"
           aria-label={`Visit my ${props.title}`}
         >
-          <Icon icon="icon-park-outline:share" />
+          <Website className="preview" />
           Preview
         </a>
         <a
@@ -68,77 +68,74 @@ function Project(props) {
           rel="noopener noreferrer"
           aria-label={`Visit my ${props.title} repository`}
         >
-          <Icon icon="grommet-icons:github" />
+          <SourceCode />
           Source Code
         </a>
         <div className="share" onClick={toggleShare}>
-          <Icon icon={isOpen ? "material-symbols:close" : "ooui:share"} />
+          {isOpen ? <Close /> : <Share />}
           <div className={`share-links ${isOpen ? "open" : ""}`}>
-            <>
-              <a
-                href={`https://t.me/share/url?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Share ${props.title} project via telegram`}
-              >
-                <Icon icon="ri:telegram-2-line" /> Telegram
-              </a>
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${props.link}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Share ${props.title} project via LinkedIn`}
+            >
+              <Linkedin className="share-icons" /> LinkedIn
+            </a>
 
-              <a
-                href={`mailto:?subject=Awesome%20Project&body=Check%20out%20this%20awesome%20project!%20${props.link}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Share ${props.title} project via email`}
-              >
-                <Icon icon="ic:outline-email" /> Email
-              </a>
+            <a
+              href={`https://api.whatsapp.com/send?text=Check%20out%20this%20awesome%20project!%20${props.link}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Share ${props.title} project via WhatsApp`}
+            >
+              <WhatsApp className="share-icons" /> WhatsApp
+            </a>
 
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${props.link}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Share ${props.title} project via facebook`}
-              >
-                <Icon icon="uil:facebook" /> Facebook
-              </a>
+            <a
+              href={`https://t.me/share/url?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Share ${props.title} project via Telegram`}
+            >
+              <Telegram className="share-icons" /> Telegram
+            </a>
 
-              <a
-                href={`https://twitter.com/intent/tweet?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Share ${props.title} project via x or former twitter`}
-              >
-                <Icon icon="ri:twitter-x-line" /> Twitter
-              </a>
+            <a
+              href={`https://twitter.com/intent/tweet?url=${props.link}&text=Check%20out%20this%20awesome%20project!`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Share ${props.title} project via X`}
+            >
+              <X className="share-icons" /> X
+            </a>
 
-              <a
-                href={`https://www.reddit.com/submit?url=${props.link}&title=Check%20out%20this%20awesome%20project!`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Share ${props.title} project via reddit`}
-              >
-                <Icon icon="dashicons:reddit" /> Reddit
-              </a>
+            <a
+              href={`https://www.reddit.com/submit?url=${props.link}&title=Check%20out%20this%20awesome%20project!`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Share ${props.title} project via Reddit`}
+            >
+              <Reddit className="share-icons" /> Reddit
+            </a>
 
-              <a
-                href={`https://api.whatsapp.com/send?text=Check%20out%20this%20awesome%20project!%20${props.link}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Share ${props.title} project via whatsapp`}
-              >
-                <Icon icon="ic:baseline-whatsapp" /> WhatsApp
-              </a>
+            <a
+              href={`mailto:?subject=Awesome%20Project&body=Check%20out%20this%20awesome%20project!%20${props.link}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Share ${props.title} project via Email`}
+            >
+              <Email className="share-icons" /> Email
+            </a>
 
-              {/* LinkedIn */}
-              <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${props.link}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Share ${props.title} project via linkedin`}
-              >
-                <Icon icon="jam:linkedin" /> LinkedIn
-              </a>
-            </>
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=${props.link}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Share ${props.title} project via Facebook`}
+            >
+              <Facebook className="share-icons" /> Facebook
+            </a>
           </div>
         </div>
       </div>

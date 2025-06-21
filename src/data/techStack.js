@@ -1,22 +1,22 @@
 const techStack = [
   {
     name: "React",
-    icon: "devicon:react",
+    icon: "React",
     experience: "2mo+",
   },
   {
     name: "Tailwind",
-    icon: "devicon:tailwindcss",
+    icon: "Tailwind",
     experience: "1mo+",
   },
   {
     name: "Javascript",
-    icon: "logos:javascript",
+    icon: "Javascript",
     experience: "6mo+",
   },
   {
     name: "C++",
-    icon: "devicon:cplusplus",
+    icon: "CPlusPlus",
     experience: "1yr+",
   },
 ];

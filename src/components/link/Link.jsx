@@ -1,17 +1,18 @@
-import { Icon } from "@iconify/react";
 import "./Link.css";
+import iconMap from "../../data/iconMap.js";
 
-function Link(props) {
+function Link({ name, link }) {
+  let Icon = iconMap[name];
   return (
     <a
-      href={props.link}
+      href={link}
       target="_blank"
       className="social-link"
-      aria-label={`Visit my ${props.name}`}
+      aria-label={`Visit my ${name}`}
     >
-      <Icon icon={props.icon} className="social-link-icon" />
+      <Icon />
       <div className="social-link-detail-wrapper">
-        <span className="tool-tip">{props.name}</span>
+        <span className="tool-tip">{name}</span>
       </div>
     </a>
   );

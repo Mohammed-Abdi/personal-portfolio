@@ -1,10 +1,11 @@
+import iconMap from "../../data/iconMap";
 import "./Tool.css";
-import { Icon } from "@iconify/react";
 
 function Tool({ icon, name, experience }) {
+  const Icon = iconMap[icon];
   return (
     <div className="tool">
-      <Icon icon={icon} className="icon" />
+      <Icon />
       <div className="tech-info">
         <span>{name}</span>
         <span className="experience">{`${experience} exp`}</span>

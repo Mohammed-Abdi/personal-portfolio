@@ -3,12 +3,16 @@ import projects from "../../data/projects.js";
 import Project from "../../components/project/Project.jsx";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import iconMap from "../../data/iconMap.js";
 
 function Projects() {
   const currentYear = new Date().getFullYear();
   const [search, setSearch] = useState("");
   const [year, setYear] = useState(currentYear);
   const [dropDown, setDropDown] = useState(false);
+  const DropDown = iconMap["DropDown"];
+  const DropUp = iconMap["DropUp"];
+  const NotFound = iconMap["Sad"];
   function handleFilter(e) {
     setYear(e.target.value);
   }
@@ -29,7 +33,7 @@ function Projects() {
         />
         <div className="filter-button" onClick={toggleDropDown}>
           {year}
-          <Icon icon="ri:arrow-down-s-line" />
+          {dropDown ? <DropUp /> : <DropDown />}
           <div className={`years ${dropDown ? "dropped" : ""}`}>
             <button
               value={2025}
@@ -98,8 +102,8 @@ function Projects() {
           )
         ) : (
           <div className="not-found">
-            <Icon icon="line-md:emoji-frown-open" className="icon" />
-            <p>Project not found</p>
+            <NotFound />
+            <p>Oops! Project not found</p>
           </div>
         )}
       </div>

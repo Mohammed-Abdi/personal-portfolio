@@ -6,10 +6,6 @@
   font-size: 0.875rem;
 }
 
-.tool .icon {
-  font-size: 2rem;
-}
-
 /* tech-info container for label + tube */
 .tool .tech-info {
   display: flex;

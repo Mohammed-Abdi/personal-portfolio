@@ -1,15 +1,17 @@
 import "./About.css";
 import socials from "../../data/socials.js";
 import Link from "../../components/link/Link.jsx";
-import { Icon } from "@iconify/react";
+import iconMap from "../../data/iconMap.js";
 
 function About() {
+  const Verified = iconMap["Verified"];
+  const User = iconMap["User"];
   return (
     <>
       <section className="about">
         <div className="my about-me hidden">
           <div className="image-wrapper">
-            <Icon icon="lets-icons:user" className="icon" />
+            <User className="icon" />
             <img
               src="image/profile/mohammed-abdi.webp"
               alt="mohammed abdi's profile picture"
@@ -22,20 +24,12 @@ function About() {
             <span className="profession">Frontend Engineer</span>
             <span className="location">Based in Dire Dawa, Ethiopia</span>
           </div>
-          <Icon icon="material-symbols:verified-outline" className="legit" />
+          <Verified className="legit" />
         </div>
         <div className="my social-links hidden">
           <span className="link-title">Feel free to reach out!</span>
           {socials.map((social, index) => {
-            return (
-              <Link
-                key={index}
-                name={social.name}
-                icon={social.icon}
-                link={social.link}
-                username={social.username}
-              />
-            );
+            return <Link key={index} name={social.name} link={social.link} />;
           })}
         </div>
       </section>

@@ -1,7 +1,9 @@
 import "./Job.css";
-import { Icon } from "@iconify/react";
+import iconMap from "../../data/iconMap";
 
 function Job(props) {
+  const Location = iconMap["Location"];
+  const Institution = iconMap["Institution"];
   return (
     <div className="job">
       <a
@@ -10,7 +12,7 @@ function Job(props) {
         aria-label={`Visit ${props.name} official website`}
       >
         <div className="image-wrapper">
-          <Icon icon="mdi:building" className="icon" />
+          <Institution className="icon" />
           <img
             src={props.logo}
             alt={`${props.name} logo`}
@@ -23,7 +25,7 @@ function Job(props) {
       <span className="profession">{props.job}</span>
       <span className="name">{props.name}</span>
       <span className="location">
-        <Icon icon="weui:location-filled" />
+        <Location />
         {props.location}
       </span>
       <span className="description">{props.description}</span>
