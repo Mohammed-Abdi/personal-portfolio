@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/preview/repo-mockup.png" alt="Portfolio Mockup" width="100%" />
+  <img src="/public/preview/repo-mockup.webp" alt="Portfolio Mockup" width="100%" />
 </p>
 
 <div align="center">
