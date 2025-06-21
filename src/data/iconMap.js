@@ -1,7 +1,7 @@
 import Telegram from "../assets/icons/socials/Telegram.jsx";
 import Linkedin from "../assets/icons/socials/Linkedin.jsx";
 import Facebook from "../assets/icons/socials/Facebook.jsx";
-import GitHub from "../assets/icons/socials/github.jsx";
+import GitHub from "../assets/icons/socials/Github.jsx";
 import Email from "../assets/icons/socials/Email.jsx";
 import Instagram from "../assets/icons/socials/Instagram.jsx";
 import Verified from "../assets/icons/symbols/Verified.jsx";
@@ -22,7 +22,7 @@ import Github from "../assets/icons/symbols/Github.jsx";
 import Share from "../assets/icons/symbols/Share.jsx";
 import Location from "../assets/icons/symbols/Location.jsx";
 import Institution from "../assets/icons/symbols/Institution.jsx";
-import Sad from "../assets/icons/symbols/sad.jsx";
+import Sad from "../assets/icons/symbols/Sad.jsx";
 import Reddit from "../assets/icons/socials/Reddit.jsx";
 import Whatsapp from "../assets/icons/socials/Whatsapp.jsx";
 import X from "../assets/icons/socials/X.jsx";
