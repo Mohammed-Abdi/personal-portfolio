@@ -1,5 +1,19 @@
 const projects = [
   {
+    img: "preview/ddu-stack.webp",
+    title: "DDU STACK",
+    description:
+      "A hub for course materials that simplifies access and download. Solves the chaos of scattered academic files with a clean, intuitive UI.",
+    techStack: [
+      { name: "React", icon: "ReactMini" },
+      { name: "Javascript", icon: "JavascriptMini" },
+      { name: "CSS", icon: "CssMini" },
+    ],
+    link: "https://ddustack.vercel.app/",
+    repo: "https://github.com/Mohammed-Abdi/ddu-stack",
+    year: 2025,
+  },
+  {
     img: "preview/trip-tote.webp",
     title: "Trip Tote",
     description:
@@ -39,7 +53,7 @@ const projects = [
     ],
     link: "https://recipes-recipes.vercel.app",
     repo: "https://github.com/Mohammed-Abdi/Recipes",
-    year: 2024,
+    year: 2025,
   },
 ];
 
