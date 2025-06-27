@@ -114,14 +114,16 @@
   color: var(--dark-clr);
 }
 
-.project .live-preview:hover {
-  opacity: 0.7;
-}
+@media (min-width: 768px) {
+  .project .live-preview:hover {
+    opacity: 0.7;
+  }
 
-/* Source Code & Share Buttons */
-.project .source-code:hover,
-.project .share:hover {
-  background-color: var(--hover-light);
+  /* Source Code & Share Buttons */
+  .project .source-code:hover,
+  .project .share:hover {
+    background-color: var(--hover-light);
+  }
 }
 
 /* Share icon button */
