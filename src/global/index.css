@@ -10,6 +10,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Outfit", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
