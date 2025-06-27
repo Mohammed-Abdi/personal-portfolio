@@ -121,8 +121,10 @@
   transition: background 0.3s ease-in-out;
 }
 
-.projects .more-projects:hover {
-  background: var(--hover-light);
+@media (min-width: 768px) {
+  .projects .more-projects:hover {
+    background: var(--hover-light);
+  }
 }
 
 @media (max-width: 700px) {
