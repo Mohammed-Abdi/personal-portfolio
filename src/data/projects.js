@@ -9,7 +9,7 @@ const projects = [
       { name: "Javascript", icon: "JavascriptMini" },
       { name: "CSS", icon: "CssMini" },
     ],
-    link: "https://ddustack.vercel.app/",
+    link: "https://ddustack.online/",
     repo: "https://github.com/Mohammed-Abdi/ddu-stack",
     year: 2025,
   },
