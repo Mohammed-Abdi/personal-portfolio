@@ -14,6 +14,20 @@ const projects = [
     year: 2025,
   },
   {
+    img: "preview/think-fast.webp",
+    title: "Think Fast",
+    description:
+      "A quiz game that sharpens thinking and speed. Replaces boring trivia with slick design and clever, tricky questions.",
+    techStack: [
+      { name: "React", icon: "ReactMini" },
+      { name: "Javascript", icon: "JavascriptMini" },
+      { name: "CSS", icon: "CssMini" },
+    ],
+    link: "https://think-fast-quiz.vercel.app/",
+    repo: "https://github.com/Mohammed-Abdi/think-fast",
+    year: 2025,
+  },
+  {
     img: "preview/trip-tote.webp",
     title: "Trip Tote",
     description:
