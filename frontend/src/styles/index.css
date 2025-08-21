@@ -1,0 +1,7 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
+}

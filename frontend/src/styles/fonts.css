@@ -1,0 +1,44 @@
+/* Outfit 300 - Light */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("@assets/fonts/outfit-v14-latin-300.woff2") format("woff2");
+}
+
+/* Outfit 400 - Regular */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("@assets/fonts/outfit-v14-latin-regular.woff2") format("woff2");
+}
+
+/* Outfit 500 - Medium */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  src: url("@assets/fonts/outfit-v14-latin-500.woff2") format("woff2");
+}
+
+/* Outfit 600 - Semi-Bold */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("@assets/fonts/outfit-v14-latin-600.woff2") format("woff2");
+}
+
+/* Outfit 700 - Bold */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("@assets/fonts/outfit-v14-latin-700.woff2") format("woff2");
+}
