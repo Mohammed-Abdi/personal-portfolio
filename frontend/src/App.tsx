@@ -1,7 +1,7 @@
-import NavBar from "./components/layouts/NavBar";
+import AppRouter from "./router/Router";
 
 const App = () => {
-  return <NavBar />;
+  return <AppRouter />;
 };
 
 export default App;
