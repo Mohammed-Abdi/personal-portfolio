@@ -14,6 +14,7 @@ const NavBar: React.FC = () => {
       style={{
         background:
           "linear-gradient(var(--color-bg-overlay-20), var(--color-bg-overlay-10))",
+        backdropFilter: "blur(10px)",
       }}
     >
       {navLinks.map((navLink) => (

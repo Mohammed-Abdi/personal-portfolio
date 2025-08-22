@@ -7,7 +7,7 @@ interface SectionsProp extends React.HtmlHTMLAttributes<HTMLElement> {
 
 const Sections: React.FC<SectionsProp> = ({ children, ...props }) => {
   return (
-    <section className="flex flex-col gap-5 py-5" {...props}>
+    <section className="flex flex-col gap-20 py-20" {...props}>
       {children}
     </section>
   );

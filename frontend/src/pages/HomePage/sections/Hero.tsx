@@ -3,7 +3,7 @@ import PrimaryButton from "../../../components/ui/PrimaryButton";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col items-center gap-5 text-center pt-20">
+    <section className="flex flex-col items-center gap-5 text-center">
       <h1 className="text-3xl md:text-6xl max-w-3xl font-medium">
         Crafting Ideas into Scalable Web Experiences
       </h1>

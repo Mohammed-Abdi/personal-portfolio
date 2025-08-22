@@ -3,6 +3,7 @@ import Header from "../../components/layouts/Header";
 import NavBar from "../../components/layouts/NavBar";
 import Hero from "./sections/Hero";
 import Sections from "../../components/layouts/Sections";
+import Projects from "./sections/Projects";
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       </Header>
       <Sections>
         <Hero />
+        <Projects />
       </Sections>
     </main>
   );
