@@ -1,6 +1,7 @@
 import type React from "react";
-import Header from "../components/layouts/Header";
-import NavBar from "../components/layouts/NavBar";
+import Header from "../../components/layouts/Header";
+import NavBar from "../../components/layouts/NavBar";
+import Hero from "./sections/Hero";
 
 const Home: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
       <Header>
         <NavBar />
       </Header>
+      <Hero />
     </main>
   );
 };
