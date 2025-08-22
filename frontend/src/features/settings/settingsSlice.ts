@@ -12,8 +12,8 @@ interface SettingsState {
 
 const initialState: SettingsState = {
   navLinks: [
-    { label: "Work", link: "#work", isActive: true },
-    { label: "Info", link: "#info", isActive: false },
+    { label: "Work", link: "/", isActive: true },
+    { label: "Info", link: "/info", isActive: false },
   ],
 };
 

@@ -2,6 +2,7 @@ import type React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store/store";
 import { setActive } from "../../features/settings/settingsSlice";
+import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   const navLinks = useSelector((state: RootState) => state.settings.navLinks);
@@ -16,9 +17,9 @@ const NavBar: React.FC = () => {
       }}
     >
       {navLinks.map((navLink) => (
-        <a
+        <Link
           key={navLink.link}
-          href={navLink.link}
+          to={navLink.link}
           rel="noreferrer noopener"
           onClick={() => dispatch(setActive(navLink.link))}
           className={`relative flex items-center justify-center w-16 py-1.5 rounded-full transition-all duration-300
@@ -42,7 +43,7 @@ const NavBar: React.FC = () => {
               ></div>
             </>
           )}
-        </a>
+        </Link>
       ))}
     </nav>
   );
