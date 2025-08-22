@@ -1,4 +1,5 @@
 import type React from "react";
+import PrimaryButton from "../../../components/ui/PrimaryButton";
 
 const Hero: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Hero: React.FC = () => {
         problem-solving to build digital products that solve real-world problems
       </p>
       {/* TODO: ADD CTA Button Here */}
+      <PrimaryButton label="Get in Touch" />
     </section>
   );
 };
