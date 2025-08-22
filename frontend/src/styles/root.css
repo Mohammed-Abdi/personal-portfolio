@@ -6,6 +6,12 @@
   --color-bg-secondary: #0d1117;
   --color-bg-tertiary: #151b23;
 
+  --color-bg-overlay-10: #ffffff1a;
+  --color-bg-overlay-20: #ffffff33;
+  --color-bg-overlay-30: #ffffff4d;
+  --color-bg-overlay-40: #ffffff66;
+  --color-bg-overlay-50: #ffffff80;
+
   --color-text-primary: #fefefe;
   --color-text-muted: #fefefeb3;
 
