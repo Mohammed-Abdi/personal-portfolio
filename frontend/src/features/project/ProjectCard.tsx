@@ -23,7 +23,7 @@ const ProjectCard: React.FC = () => {
     >
       {/* glowing border */}
       <div
-        className="absolute w-full h-full -top-0.5 -z-10 opacity-50"
+        className="absolute w-full h-full -top-0.5 left-0 -z-10 opacity-50"
         style={{
           background:
             "linear-gradient(to right, transparent, white, transparent)",
