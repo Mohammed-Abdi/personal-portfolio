@@ -12,13 +12,11 @@ import Adjust from "../../assets/icons/Adjust";
 import NavArrow from "../../assets/icons/NavArrow";
 
 const ProjectCard: React.FC = () => {
-  const isMobile = useMediaQuery("mobile");
-
-  // src place holder for one project
-  const src = `https://dwehtquozaiqybsigtpb.supabase.co/storage/v1/object/public/projects/ddustack-${
-    isMobile ? "mobile" : "desktop"
-  }-preview.webp`;
+  // src place holder
+  const src =
+    "https://dwehtquozaiqybsigtpb.supabase.co/storage/v1/object/public/projects/ddustack-desktop-preview.webp";
   const loaded = useImageLoader(src);
+  const isMobile = useMediaQuery("mobile");
 
   return (
     <div
@@ -112,7 +110,7 @@ const ProjectCard: React.FC = () => {
         )}
         <div
           className="flex justify-center items-center bg-[var(--color-bg-primary)]"
-          style={{ aspectRatio: isMobile ? "3 / 4" : "16 / 9" }}
+          style={{ aspectRatio: "16 / 9" }}
         >
           {loaded ? (
             // incase i want live demo
