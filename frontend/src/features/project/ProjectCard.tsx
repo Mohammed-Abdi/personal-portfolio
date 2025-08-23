@@ -6,12 +6,16 @@ import More from "../../assets/icons/More";
 import Plus from "../../assets/icons/Plus";
 import Spinner from "../../assets/animations/Spinner";
 import { useImageLoader } from "../../hooks/useImageLoader";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
+import TabOne from "../../assets/icons/TabOne";
+import Adjust from "../../assets/icons/Adjust";
 
 const ProjectCard: React.FC = () => {
   // src place holder
   const src =
     "https://api.microlink.io/?url=https://vercel.com&screenshot=true&embed=screenshot.url&colorScheme=dark";
   const loaded = useImageLoader(src);
+  const isMobile = useMediaQuery("mobile");
 
   return (
     <div
@@ -42,37 +46,59 @@ const ProjectCard: React.FC = () => {
       {/* Mac Tab */}
       <div className="border border-b-0 border-[var(--color-border)] rounded-t-xl overflow-hidden">
         <div className="flex flex-col">
-          <div className="h-1.5 w-full bg-[var(--color-bg-secondary)]"></div>
           <div
-            className="flex justify-between items-stretch"
-            style={{
-              background:
-                "linear-gradient(to top, var(--color-bg-tertiary) ,var(--color-bg-secondary))",
-            }}
-          >
-            <div className="flex items-center justify-center gap-2 w-fit py-2.5 px-5 bg-[var(--color-bg-secondary)] rounded-br-lg">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#F45D5C]"></div>
-              <div className="w-2.5 h-2.5 rounded-full bg-[#FEB82B]"></div>
-              <div className="w-2.5 h-2.5 rounded-full bg-[#26C540]"></div>
-            </div>
+            className={`h-1.5 w-full bg-[var(--color-bg-${
+              isMobile ? "tertiary" : "secondary"
+            })]`}
+          ></div>
+          {!isMobile && (
+            <div
+              className="flex justify-between items-stretch"
+              style={{
+                background:
+                  "linear-gradient(to top, var(--color-bg-tertiary) ,var(--color-bg-secondary))",
+              }}
+            >
+              <div className="flex items-center justify-center gap-2 w-fit py-2.5 px-5 bg-[var(--color-bg-secondary)] rounded-br-lg">
+                <div className="w-2.5 h-2.5 rounded-full bg-[#F45D5C]"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-[#FEB82B]"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-[#26C540]"></div>
+              </div>
 
-            <div className="flex items-center w-50 rounded-lg px-2 bg-[var(--color-bg-tertiary)] rounded-bl-lg"></div>
+              <div className="flex items-center w-50 rounded-lg px-2 bg-[var(--color-bg-tertiary)] rounded-bl-lg"></div>
 
-            <div className="flex items-center w-full px-2 bg-[var(--color-bg-secondary)] rounded-bl-lg">
-              <Plus className="w-4 h-4 opacity-70" />
+              <div className="flex items-center w-full px-2 bg-[var(--color-bg-secondary)] rounded-bl-lg">
+                <Plus className="w-4 h-4 opacity-70" />
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className="flex gap-5 items-center bg-[var(--color-bg-tertiary)] h-10 px-2.5 py-1.5">
-          <div className="flex gap-2.5 items-center opacity-70">
-            <Arrow className="w-4 h-4" />
-            <Arrow className="w-4 h-4 rotate-180" />
-            <Reload className="w-4 h-4" />
+          {!isMobile && (
+            <div className="flex gap-2.5 items-center opacity-70">
+              <Arrow className="w-4 h-4" />
+              <Arrow className="w-4 h-4 rotate-180" />
+              <Reload className="w-4 h-4" />
+            </div>
+          )}
+
+          <div className="flex gap-2.5 items-center px-2.5 h-full w-full rounded-full bg-[var(--color-bg-secondary)]">
+            <Adjust className="w-4 h-4 opacity-70" />
+            <span className="text-xs text-[var(--color-text-muted)]">
+              vercel.com
+            </span>
           </div>
-          <div className="h-full w-full rounded-full bg-[var(--color-bg-secondary)]"></div>
-          <div className="flex gap-2.5 items-center opacity-70">
-            <User className="w-4 h-4" />
+
+          <div
+            className={`flex gap-${isMobile ? 5 : 2.5} items-center opacity-70`}
+          >
+            {isMobile && <Plus className="w-4 h-4" />}
+            {isMobile ? (
+              <TabOne className="w-4 h-4" />
+            ) : (
+              <User className="w-4 h-4" />
+            )}
             <More className="w-4 h-4 " />
           </div>
         </div>
