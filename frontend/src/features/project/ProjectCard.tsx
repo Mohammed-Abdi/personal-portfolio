@@ -9,6 +9,7 @@ import { useImageLoader } from "../../hooks/useImageLoader";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import TabOne from "../../assets/icons/TabOne";
 import Adjust from "../../assets/icons/Adjust";
+import NavArrow from "../../assets/icons/NavArrow";
 
 const ProjectCard: React.FC = () => {
   // src place holder
@@ -34,6 +35,8 @@ const ProjectCard: React.FC = () => {
             "linear-gradient(to right, transparent, white, transparent)",
         }}
       ></div>
+
+      <NavArrow className="absolute right-5 top-7 md:right-10 md:top-12 rotate-90 opacity-70" />
 
       {/* Project Header */}
       <div>
@@ -102,11 +105,22 @@ const ProjectCard: React.FC = () => {
             <More className="w-4 h-4 " />
           </div>
         </div>
+        {isMobile && (
+          <div className="h-1.5 w-full bg-[var(--color-bg-tertiary)]"></div>
+        )}
         <div
           className="flex justify-center items-center bg-[var(--color-bg-primary)]"
-          style={{ aspectRatio: "16 / 9" }}
+          style={{ aspectRatio: isMobile ? "3 / 4" : "16 / 9" }}
         >
           {loaded ? (
+            // incase i want live demo
+            // <iframe
+            //   src="https://ddustack.vercel.app/"
+            //   className="w-full h-full"
+            //   loading="lazy"
+            //   title="Embedded Website"
+            // />
+
             <img src={src} alt="preview" loading="lazy" className="w-full" />
           ) : (
             <div className="flex flex-col items-center gap-2.5">
