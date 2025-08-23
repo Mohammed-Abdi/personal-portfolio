@@ -12,11 +12,13 @@ import Adjust from "../../assets/icons/Adjust";
 import NavArrow from "../../assets/icons/NavArrow";
 
 const ProjectCard: React.FC = () => {
-  // src place holder
-  const src =
-    "https://dwehtquozaiqybsigtpb.supabase.co/storage/v1/object/public/projects/ddustack-desktop-preview.webp";
-  const loaded = useImageLoader(src);
   const isMobile = useMediaQuery("mobile");
+
+  // src place holder
+  const src = `https://dwehtquozaiqybsigtpb.supabase.co/storage/v1/object/public/projects/ddustack-${
+    isMobile ? "mobile" : "desktop"
+  }-preview.webp`;
+  const loaded = useImageLoader(src);
 
   return (
     <div
@@ -109,19 +111,16 @@ const ProjectCard: React.FC = () => {
           <div className="h-1.5 w-full bg-[var(--color-bg-tertiary)]"></div>
         )}
         <div
-          className="flex justify-center items-center bg-[var(--color-bg-primary)]"
-          style={{ aspectRatio: "16 / 9" }}
+          className="flex justify-center items-center bg-[var(--color-bg-primary)] overflow-hidden"
+          style={{ aspectRatio: isMobile ? "9 / 16" : "16 / 9" }}
         >
           {loaded ? (
-            // incase i want live demo
-            // <iframe
-            //   src="https://ddustack.vercel.app/"
-            //   className="w-full h-full"
-            //   loading="lazy"
-            //   title="Embedded Website"
-            // />
-
-            <img src={src} alt="preview" loading="lazy" className="w-full" />
+            <img
+              src={src}
+              alt="preview"
+              loading="lazy"
+              className="w-full h-full object-cover object-top"
+            />
           ) : (
             <div className="flex flex-col items-center gap-2.5">
               <Spinner />

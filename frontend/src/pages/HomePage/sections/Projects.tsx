@@ -3,7 +3,8 @@ import ProjectCard from "../../../features/project/ProjectCard";
 
 const Projects: React.FC = () => {
   return (
-    <section className="flex flex-col items-center gap-5 px-5">
+    <section className="flex flex-col items-center gap-10 px-5">
+      <ProjectCard />
       <ProjectCard />
     </section>
   );
