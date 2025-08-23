@@ -12,6 +12,7 @@ const ProjectCard: React.FC = () => {
   const src =
     "https://api.microlink.io/?url=https://vercel.com&screenshot=true&embed=screenshot.url&colorScheme=dark";
   const loaded = useImageLoader(src);
+
   return (
     <div
       className="flex flex-col gap-5 w-full max-w-4xl relative p-5 pb-0 md:pb-0 md:p-10 rounded-xl md:rounded-2xl outline outline-[var(--color-bg-overlay-20)]"
@@ -23,7 +24,7 @@ const ProjectCard: React.FC = () => {
     >
       {/* glowing border */}
       <div
-        className="absolute w-full h-full -top-0.5 left-0 -z-10 opacity-50"
+        className="absolute inset-0 -top-0.5 left-0 -z-10 opacity-50"
         style={{
           background:
             "linear-gradient(to right, transparent, white, transparent)",
@@ -39,7 +40,7 @@ const ProjectCard: React.FC = () => {
       </div>
 
       {/* Mac Tab */}
-      <div className="border border-b-0 border-[var(--color-border)] h-full rounded-t-xl overflow-hidden">
+      <div className="border border-b-0 border-[var(--color-border)] rounded-t-xl overflow-hidden">
         <div className="flex flex-col">
           <div className="h-1.5 w-full bg-[var(--color-bg-secondary)]"></div>
           <div
@@ -75,18 +76,18 @@ const ProjectCard: React.FC = () => {
             <More className="w-4 h-4 " />
           </div>
         </div>
-        <div className="flex justify-center items-center h-full">
+        <div
+          className="flex justify-center items-center bg-[var(--color-bg-primary)]"
+          style={{ aspectRatio: "16 / 9" }}
+        >
           {loaded ? (
-            <img
-              src={src}
-              alt="preview"
-              loading="lazy"
-              className="w-full h-full"
-            />
+            <img src={src} alt="preview" loading="lazy" className="w-full" />
           ) : (
-            <div className="flex flex-col items-center gap-2.5 -translate-y-10">
+            <div className="flex flex-col items-center gap-2.5">
               <Spinner />
-              <p>One moment please...</p>
+              <p className="text-sm text-[var(--color-text-muted)]">
+                One moment please...
+              </p>
             </div>
           )}
         </div>

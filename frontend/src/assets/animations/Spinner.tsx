@@ -33,7 +33,7 @@ const StyledWrapper = styled.div`
   .loader::after {
     width: 85%;
     height: 85%;
-    background-color: var(--color-bg-secondary);
+    background-color: var(--color-bg-primary);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
