@@ -12,11 +12,13 @@ import Adjust from "../../assets/icons/Adjust";
 import NavArrow from "../../assets/icons/NavArrow";
 
 const ProjectCard: React.FC = () => {
-  // src place holder
-  const src =
-    "https://api.microlink.io/?url=https://vercel.com&screenshot=true&embed=screenshot.url&colorScheme=dark";
-  const loaded = useImageLoader(src);
   const isMobile = useMediaQuery("mobile");
+
+  // src place holder for one project
+  const src = `https://dwehtquozaiqybsigtpb.supabase.co/storage/v1/object/public/projects/ddustack-${
+    isMobile ? "mobile" : "desktop"
+  }-preview.webp`;
+  const loaded = useImageLoader(src);
 
   return (
     <div
